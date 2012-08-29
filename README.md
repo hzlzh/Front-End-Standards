@@ -4,6 +4,18 @@
 
 [GeekPark] & [ITvalue] 前端开发团队遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。
 
+## 索引
+* [规范内容](#规范内容)
+* [书写规范](#书写规范)
+    * [样式与内容分离](#样式与内容分离)
+    * [CSS 细化规范](#CSS-细化规范)
+    * [XHTML 细化规范](#XHTML-细化规范)
+    * [JS 细化规范](#JS-细化规范)
+* [Newletter制作规范](#Newletter制作规范)
+* [工具推荐(Mac)](#工具推荐(Mac))
+* [相关技巧](#相关技巧)
+* [参考数据](#参考数据)
+
 ## 规范内容
 ----
 1. CSS reset 文件：[base.css]  
@@ -120,7 +132,7 @@ _如：以下2种顺序均可_
     .box3,#box4{z-index:66;width:77px;}
 _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_  
     
-###XHTML 细化规范：
+### XHTML 细化规范
 
 #### HTML 注释格式约定  
     <!--
@@ -200,7 +212,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * 避免使用`style="xxx:xxx"`的内联样式表
 * 特殊符号使用参考[HTML 符号实体]
 
-###JS 细化规范：
+###JS 细化规范
 ----
 
 #####文件结构：
@@ -240,10 +252,11 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * KenDo UI：[KenDo UI]
 * textarea自适应高度：[elastic]
 
-### Newletter制作规范：
+### Newletter制作规范
 * 整理排版中，待发
 
 ### 工具推荐(Mac)
+*for more detial check ->[IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
 
 * 编辑器：Sublime Text 2 / TextMate 2 / Vim
 * 浏览器：Chrome / Firefox + Firebug
@@ -259,7 +272,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * 其他相关工具：Cookie / ColorSchemer Studio / Less / SpriteRight / iTerm2
 
 ### 相关技巧
-[Wiki page](https://github.com/GeekPark/Doc/wiki/_pages)  
+[Wiki page index](https://github.com/GeekPark/Doc/wiki/_pages)  
 * [各浏览器的缓存清除方法]  
 * [测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]
 
