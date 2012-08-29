@@ -277,18 +277,19 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * [测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]
 
 ### 参考数据
-考虑设计和重构兼容性时可参考各浏览器的占用情况  
-*-- updated: `2012-08`*  via `Google Analytics`  
+涉及到 `设计`->`重构`->`兼容性`->`测试` 时可参考各浏览器的占用情况  
+*-- updated: `2012-08`*  via `Google Analytics of GeekPark`  
 
-| 总浏览器        |     占有率 |      
-|:---------------|----------:|      
-| Chrome         |    38.41% |      
-| IE             |    23.10% | 
-| Mozilla Agent  |     9.57% |      
-| Firefox        |     7.99% |      
-| Safari         |     7.09% |      
-| Safari (in-app)|     2.45% |      
-| Opera          |     0.86% |      
+| 总浏览器        |     占有率 |
+|:---------------|----------:|
+| Chrome         |    38.41% |
+| IE             |    23.10% |
+| Mozilla Agent  |     9.57% |
+| Android Browser|     9.02% |
+| Firefox        |     7.99% |
+| Safari         |     7.09% |
+| Safari (in-app)|     2.45% |
+| Opera          |     0.86% |
 
 | IE版本分布     |       占有率 |
 |:--------------|------------:|
