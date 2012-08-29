@@ -269,16 +269,24 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 考虑设计和重构兼容性时可参考各浏览器的占用情况  
 *-- updated: `2012-08`*  via `Google Analytics`  
 
-| 总浏览器        |     占有率 |      | 移动设备      |       占有率 |
-|:---------------|----------:|      |:--------------|------------:|
-| Chrome         |    38.41% |      | iOS           |      57.99% |
-| IE             |    23.10% |      | Android       |      40.72% |
-| Mozilla Agent  |     9.57% |      | Nokia         |       0.55% |
-| Android Browser|     9.02% |      | Windows Phone |       0.49% |
+| 总浏览器        |     占有率 |      
+|:---------------|----------:|      
+| Chrome         |    38.41% |      
+| IE             |    23.10% | 
+| Mozilla Agent  |     9.57% |      
+| Android Browser|     9.02% |      
 | Firefox        |     7.99% |      
 | Safari         |     7.09% |      
 | Safari (in-app)|     2.45% |      
 | Opera          |     0.86% |      
+
+
+| 移动设备      |       占有率 |
+|:--------------|------------:|
+| iOS           |      57.99% |
+| Android       |      40.72% |
+| Nokia         |       0.55% |
+| Windows Phone |       0.49% |   
 
 
 
