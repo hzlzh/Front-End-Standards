@@ -1,5 +1,5 @@
 # GeekPark 前端代码规范  
-![GeekPark](http://www.geekpark.net/public/img/icons/white-logo.jpg) + 
+![GeekPark](http://www.geekpark.net/public/img/icons/white-logo.jpg) 
 ![BusinessValue](http://businessvalue.com.cn/css/images/logo.gif)
 
 [GeekPark] & [ITvalue] 前端开发团队遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。
@@ -256,27 +256,25 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * 整理排版中，待发
 
 ### 工具推荐(Mac)
-*for more detial check ->[IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
+*for more app detial check -> [IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
 
-* 编辑器：Sublime Text 2 / TextMate 2 / Vim
-* 浏览器：Chrome / Firefox + Firebug
-* 兼容性测试：VirtualBox + 深度 Win XP（IE 8）
-* 版本控制工具：Versions / GitHub for Mac / SourceTree
-* FTP工具：Filezilla / ForkLift
-* HTTP代理或镜像：Charles
-* PHP集成环境：XAMPP
-* 标注工具：Mark Man / xScope
-* 取色拾色器：Sip / Snip / xScope
-* MarkDown编辑器：Mou
-* 免刷新环境：LiveReLoad
-* 其他相关工具：Cookie / ColorSchemer Studio / Less / SpriteRight / iTerm2
+* 编辑器：[Sublime Text 2] / [TextMate 2] / [Vim]
+* 浏览器：[Chrome] / [Firefox] + [Firebug]
+* 兼容性测试：[VirtualBox] + Win XP（IE 8）
+* 版本控制工具：[Versions] / [GitHub for Mac] / [SourceTree]
+* FTP工具：[Filezilla] / [ForkLift]
+* HTTP代理或镜像：[Charles]
+* PHP集成环境：[XAMPP for Mac]
+* 标注工具：[Mark Man] / [xScope]
+* 取色拾色器：[Sip] / [Snip] / [xScope]
+* MarkDown编辑器：[Mou]
+* 免刷新环境：[LiveReLoad]
+* 其他相关工具：[Cookie] / [ColorSchemer Studio] / [Less] / [SpriteRight] / [iTerm2]
 
 ### 相关技巧
 [Wiki page index](https://github.com/GeekPark/Doc/wiki/_pages)  
 * [各浏览器的缓存清除方法]  
 * [测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]
-
-本规范目前完善中，有任何新的条例欢迎 `Fork` 本项目修改后 `Pull Request`
 
 ### 参考数据
 考虑设计和重构兼容性时可参考各浏览器的占用情况  
@@ -308,14 +306,14 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 | Nokia         |       0.55% |
 | Windows Phone |       0.49% |   
 
-
+本规范目前完善中，有任何新的条例欢迎 `Fork` 本项目修改后 `Pull Request`
 
 [GeekPark]: http://geekpark.net/ "http://geekpark.net/"
 [ITvalue]: http://www.itvalue.com.cn/ "http://www.itvalue.com.cn/"
 
-[Alice]: https://github.com/alipay/alice "Alice 支付宝前端样式解决方案"
 [Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
-[base.css]: https://github.com/hzlzh/GeekPark/blob/master/base.css "CSS reset 文件"
+[Alice]: https://github.com/alipay/alice "Alice 支付宝前端样式解决方案"
+[base.css]: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css "CSS reset 文件"
 [CSS 规范]: http://aliceui.com/css-spec/ "CSS 代码书写规范"
 [样式库构建规范]: http://aliceui.com/alice-css-guide/ "该项不予参考"
 [通用兼容解决方案库]: http://aliceui.com/alice-css/#solutions "该项不予参考"
@@ -347,3 +345,28 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 
 [各浏览器的缓存清除方法]: https://github.com/GeekPark/Doc/wiki/%5B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E7%BC%93%E5%AD%98%5D%E5%90%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B5%8B%E8%AF%95%E7%BD%91%E9%A1%B5%E6%97%B6%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9A%84%E6%96%B9%E6%B3%95
 [测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]: https://github.com/GeekPark/Doc/wiki/%5B%E6%B5%8B%E8%AF%95%E6%8A%80%E5%B7%A7%5DGmail-%E6%B7%BB%E5%8A%A0%E8%AF%8D%E7%BC%80(.--)%E8%8E%B7%E5%BE%97%E5%A4%9A%E4%B8%AA%E9%82%AE%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95
+
+[Sublime Text 2]:http://www.sublimetext.com/2
+[TextMate 2]:https://github.com/textmate/textmate
+[Vim]:http://macvim.org/
+[Chrome]:http://www.google.com/chrome
+[Firefox]:http://www.mozilla.org/
+[Firebug]:http://getfirebug.com/
+[VirtualBox]:https://www.virtualbox.org/
+[Versions]:http://versionsapp.com/
+[GitHub for Mac]:http://mac.github.com/
+[SourceTree]:http://www.sourcetreeapp.com/
+[Filezilla]:http://filezilla-project.org/
+[ForkLift]:http://itunes.apple.com/us/app/forklift/id412448059?mt=12
+[Charles]:http://www.charlesproxy.com/
+[XAMPP for Mac]:http://www.apachefriends.org/en/xampp-macosx.html
+[Mark Man]:http://www.getmarkman.com/
+[xScope]:http://itunes.apple.com/us/app/xscope/id447661441?mt=12
+[Sip]:http://itunes.apple.com/app/sip/id507257563?mt=12
+[Snip]:http://itunes.apple.com/us/app/snip/id512505421?mt=12
+[Mou]:http://mouapp.com/
+[LiveReLoad]:http://http://livereload.com/
+[Cookie]:http://itunes.apple.com/us/app/cookie/id415585910?mt=12
+[ColorSchemer Studio]:http://itunes.apple.com/us/app/colorschemer-studio/id417896628?mt=12
+[Less]:http://incident57.com/less/
+[SpriteRight]:http://itunes.apple.com/us/app/spriteright/id488584662?mt=12
