@@ -285,7 +285,6 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 | Chrome         |    38.41% |      
 | IE             |    23.10% | 
 | Mozilla Agent  |     9.57% |      
-| Android Browser|     9.02% |      
 | Firefox        |     7.99% |      
 | Safari         |     7.09% |      
 | Safari (in-app)|     2.45% |      
