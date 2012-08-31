@@ -1,4 +1,4 @@
-# GeekPark 前端代码规范  
+œ# GeekPark 前端代码规范  
 ![GeekPark](http://www.geekpark.net/public/img/icons/white-logo.jpg) 
 ![BusinessValue](http://businessvalue.com.cn/css/images/logo.gif)
 
@@ -11,7 +11,7 @@
     * [CSS 细化规范](#css-细化规范)
     * [XHTML 细化规范](#xhtml-细化规范)
     * [JS 细化规范](#js-细化规范)
-* [Newletter制作规范](#newletter制作规范)
+* [Newletter制作规范](#newletter制作规范)œ
 * [工具推荐(Mac)](#工具推荐mac)
 * [相关技巧](#相关技巧)
 * [参考数据](#参考数据)
@@ -252,6 +252,9 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * KenDo UI：[KenDo UI]
 * textarea自适应高度：[elastic]
 
+#####JSON格式规范：参考[JSON Style Guide翻译]，原版：[Google JSON Style Guide]
+
+
 ### Newletter制作规范
 * 整理排版中，待发
 
@@ -304,7 +307,15 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 | iOS           |      57.99% |
 | Android       |      40.72% |
 | Nokia         |       0.55% |
-| Windows Phone |       0.49% |   
+| Windows Phone |       0.49% |  
+
+| 屏幕分辨率     |       占有率 |
+|:--------------|------------:|
+| 1366x768      |      20.23% |
+| 1440x900      |      13.17% |
+| 1280x800      |      12.85% |
+| 320x480       |      10.05% |
+| 1024x768      |       5.93% |   
 
 本规范目前完善中，有任何新的条例欢迎 `Fork` 本项目修改后 `Pull Request`
 
@@ -326,6 +337,8 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 [CSS Compressor]: http://www.csscompressor.com/ "CSS 压缩"
 [JS Compressor]: http://javascriptcompressor.com/ "JS 压缩和混淆"
 [HTML 符号实体]: http://www.w3school.com.cn/html/html_entities.asp 
+[Google JSON Style Guide]:http://google-styleguide.googlecode.com/svn/trunk/jsoncstyleguide.xml
+[JSON Style Guide翻译]:https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md
 
 [Modernizr]: http://modernizr.com/download/
 [html5shiv]: https://github.com/aFarkas/html5shiv
