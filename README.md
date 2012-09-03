@@ -11,11 +11,11 @@
     * [CSS 细化规范](#css-细化规范)
     * [XHTML 细化规范](#xhtml-细化规范)
     * [JS 细化规范](#js-细化规范)
-* [Newletter制作规范](#newletter制作规范)œ
+* [Newletter制作规范](#newletter制作规范)
 * [工具推荐(Mac)](#工具推荐mac)
 * [相关技巧](#相关技巧)
 * [参考数据](#参考数据)
-
+·
 ## 规范内容
 ----
 1. CSS reset 文件：[base.css]  
@@ -218,17 +218,17 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 #####文件结构：
 >
     ---
-    |---- /mylib/plugin-1/       使用到的js插件1  
-    |---- /mylib/plugin-2/       使用到的js插件2  
-    |---- /mylib/plugin-3/       使用到的js插件3  
-    |---- script.js              单独书写的js  
-    |---- plugins.js             调用的plugins汇总  
-    |---- juqery-1.8.x.min.js    调用jq库文件  
+    |---- /libs/plugin-1/       使用到的js插件1  
+    |---- /libs/plugin-2/       使用到的js插件2  
+    |---- /libs/plugin-3/       使用到的js插件3  
+    |---- script.js             单独书写的js  
+    |---- plugins.js            调用的plugins汇总  
+    |---- juqery-1.9.x.min.js   调用jq库文件  
 
 * 结束行需添加分号`;`
 * jQuery变量要求首字符为 `$`, 私有变量:首字符为`_`; 尽量避免全局变量.
 * 避免使用 eval()，setTimeOut使用调用函数，考虑重绘，回流 操作对页面影响  参看：[reflows，repaints]
-* JS调试使用`console.log()`进行，避免使用弹出框，线上版不能要注释掉所有的调试代码
+* JS调试使用`console.log()`及`console.dir()`进行，避免使用弹出框，线上版不能要注释掉所有的调试代码
 * JS压缩混淆工具: [JS Compressor]  如果使用了压缩，需要留 `name-src.js`在同路径供今后修改使用
 
 #####jQuery Call
@@ -253,6 +253,13 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * textarea自适应高度：[elastic]
 
 #####JSON格式规范：参考[JSON Style Guide翻译]，原版：[Google JSON Style Guide]
+
+###HTML 细化规范
+* HTML `head`部分的结构参看：[cool-head] \(摘取必要内容即可)
+* `css` 文件置于都**头部**
+* `jQuery` 及 `Google Analytics`引用置于**头部**
+* 其他效果`js`及`统计代码` 文件置于**尾部**
+* HTML 代码尽量过一遍[HTML5 验证]
 
 
 ### Newletter制作规范
@@ -328,6 +335,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 [CSS 规范]: http://aliceui.com/css-spec/ "CSS 代码书写规范"
 [样式库构建规范]: http://aliceui.com/alice-css-guide/ "该项不予参考"
 [通用兼容解决方案库]: http://aliceui.com/alice-css/#solutions "该项不予参考"
+[HTML5 验证]: http://html5.validator.nu/
 
 [reflows，repaints]: http://www.zhangxinxu.com/wordpress/2010/01/%E5%9B%9E%E6%B5%81%E4%B8%8E%E9%87%8D%E7%BB%98%EF%BC%9Acss%E6%80%A7%E8%83%BD%E8%AE%A9javascript%E5%8F%98%E6%85%A2%EF%BC%9F/  "重绘,回流参考"
 [src="" 问题]: http://js8.in/555.html "src="" 问题"
@@ -355,6 +363,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 [fancyBox]: https://github.com/fancyapps/fancyBox
 [KenDo UI]: http://www.kendoui.com/purchase.aspx
 [elastic]: http://unwrongest.com/projects/elastic/
+[cool-head]: https://github.com/hzlzh/cool-head
 
 [各浏览器的缓存清除方法]: https://github.com/GeekPark/Doc/wiki/%5B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E7%BC%93%E5%AD%98%5D%E5%90%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B5%8B%E8%AF%95%E7%BD%91%E9%A1%B5%E6%97%B6%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9A%84%E6%96%B9%E6%B3%95
 [测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]: https://github.com/GeekPark/Doc/wiki/%5B%E6%B5%8B%E8%AF%95%E6%8A%80%E5%B7%A7%5DGmail-%E6%B7%BB%E5%8A%A0%E8%AF%8D%E7%BC%80(.--)%E8%8E%B7%E5%BE%97%E5%A4%9A%E4%B8%AA%E9%82%AE%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95
