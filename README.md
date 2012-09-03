@@ -1,4 +1,4 @@
-œ# GeekPark 前端代码规范  
+# GeekPark 前端代码规范  
 ![GeekPark](http://www.geekpark.net/public/img/icons/white-logo.jpg) 
 ![BusinessValue](http://businessvalue.com.cn/css/images/logo.gif)
 
@@ -15,7 +15,7 @@
 * [工具推荐(Mac)](#工具推荐mac)
 * [相关技巧](#相关技巧)
 * [参考数据](#参考数据)
-·
+
 ## 规范内容
 ----
 1. CSS reset 文件：[base.css]  
