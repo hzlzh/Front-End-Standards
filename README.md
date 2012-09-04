@@ -392,3 +392,4 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 [ColorSchemer Studio]:http://itunes.apple.com/us/app/colorschemer-studio/id417896628?mt=12
 [Less]:http://incident57.com/less/
 [SpriteRight]:http://itunes.apple.com/us/app/spriteright/id488584662?mt=12
+[iTerm2]: http://www.iterm2.com/
