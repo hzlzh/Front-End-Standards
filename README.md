@@ -18,7 +18,7 @@
 
 ## 规范内容
 ----
-1. CSS reset 文件：[base.css]  
+1. CSS reset 文件：[main.css] 或 [reset.css]
 所有代码都基于这个文件。重设浏览器，解决依赖引起的耦合问题。 
     * `base.css` 的作用:
         * CSS reset
@@ -332,7 +332,8 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 
 [Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
 [Alice]: https://github.com/alipay/alice "Alice 支付宝前端样式解决方案"
-[base.css]: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css "CSS reset 文件"
+[main.css]: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css "CSS reset 文件"
+[reset.css]: https://github.com/murtaugh/HTML5-Reset/blob/master/_/css/style.css
 [CSS 规范]: http://aliceui.com/css-spec/ "CSS 代码书写规范"
 [样式库构建规范]: http://aliceui.com/alice-css-guide/ "该项不予参考"
 [通用兼容解决方案库]: http://aliceui.com/alice-css/#solutions "该项不予参考"
