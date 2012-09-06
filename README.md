@@ -260,6 +260,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * `jQuery` 及 `Google Analytics`引用置于**头部**
 * 其他效果`js`及`统计代码` 文件置于**尾部**
 * HTML 代码尽量过一遍[HTML5 验证]
+* HTML 占位图片使用 [placehold.us] & [placehold.it] 图片服务
 
 
 ### Newletter制作规范
@@ -393,3 +394,6 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 [Less]:http://incident57.com/less/
 [SpriteRight]:http://itunes.apple.com/us/app/spriteright/id488584662?mt=12
 [iTerm2]: http://www.iterm2.com/
+
+[placehold.us]:http://placehold.us/
+[placehold.it]:http://placehold.it/
