@@ -238,6 +238,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 #####jQuery Plugin：
 
 * IE对HTML5标签支持，以及浏览器特性检测：[Modernizr] & [html5shiv]
+* IE6 PNG 图片支持：[DD_belatedPNG]
 * 定制&统一 浏览器的滚动条样式：[jquery-scroll] & [Lionbars]
 * hover提示效果文字：[bootstrap-tooltips]
 * 滚动条跟随nav效果：[bootstrap-scrollspy]
@@ -281,7 +282,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * 取色拾色器：[Sip] / [Snip] / [xScope]
 * MarkDown编辑器：[Mou]
 * 免刷新环境：[LiveReLoad]
-* 其他相关工具：[Cookie] / [ColorSchemer Studio] / [Less] / [SpriteRight] / [iTerm2]
+* 其他相关工具：[Cookie] / [ColorSchemer Studio] / [Less] / [CodeKit] / [SpriteRight] / [iTerm2] 
 
 ### 相关技巧
 [Wiki page index](https://github.com/GeekPark/Doc/wiki/_pages)  
@@ -352,6 +353,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 [JSON Style Guide翻译]:https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md
 
 [Modernizr]: http://modernizr.com/download/
+[DD_belatedPNG]: http://www.dillerdesign.com/experiment/DD_belatedPNG/
 [html5shiv]: https://github.com/aFarkas/html5shiv
 [jquery-scroll]: https://github.com/thomd/jquery-scroll/
 [Lionbars]: https://github.com/Charuru/lionbars
@@ -395,6 +397,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 [Cookie]:http://itunes.apple.com/us/app/cookie/id415585910?mt=12
 [ColorSchemer Studio]:http://itunes.apple.com/us/app/colorschemer-studio/id417896628?mt=12
 [Less]:http://incident57.com/less/
+[CodeKit]: http://incident57.com/codekit/
 [SpriteRight]:http://itunes.apple.com/us/app/spriteright/id488584662?mt=12
 [iTerm2]: http://www.iterm2.com/
 
