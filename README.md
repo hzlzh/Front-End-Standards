@@ -225,6 +225,7 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
     |---- plugins.js            调用的plugins汇总  
     |---- juqery-1.9.x.min.js   调用jq库文件  
 
+* JS 换行缩进：采用 4 空格
 * 结束行需添加分号`;`
 * jQuery变量要求首字符为 `$`, 私有变量:首字符为`_`; 尽量避免全局变量.
 * 避免使用 eval()，setTimeOut使用调用函数，考虑重绘，回流 操作对页面影响  参看：[reflows，repaints]
