@@ -284,8 +284,8 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 * 标注工具：[Mark Man] / [xScope]
 * 取色拾色器：[Sip] / [Snip] / [xScope]
 * MarkDown编辑器：[Mou]
-* 免刷新环境：[LiveReLoad]
-* 其他相关工具：[Cookie] / [ColorSchemer Studio] / [Less] / [CodeKit] / [SpriteRight] / [iTerm2] 
+* 免刷新环境：[LiveReLoad] / [CodeKit]
+* 其他相关工具：[Cookie] / [ColorSchemer Studio] / [Less] / [SpriteRight] / [iTerm2] 
 
 ### 相关技巧
 [Wiki page index](https://github.com/GeekPark/Doc/wiki/_pages)  
