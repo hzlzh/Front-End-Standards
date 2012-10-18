@@ -70,6 +70,27 @@
 
 ### CSS 细化规范
 
+#### 使用Less
+在`.less` 开始引入 [Lesselements]，之后调用如下属性传参即可。  
+`@import "elements.less";`
+
+>
+    .gradient
+    .bw-gradient
+    .bordered
+    .drop-shadow
+    .rounded
+    .border-radius
+    .opacity
+    .transition-duration
+    .rotation
+    .scale
+    .transition
+    .inner-shadow
+    .box-shadow
+    .columns
+    .translate
+
 #### CSS 注释格式约定  
 >
     /*
@@ -355,6 +376,9 @@ _可使用工具：[CSS Compressor] 并选择\[highest\]压缩_
 [HTML 符号实体]: http://www.w3school.com.cn/html/html_entities.asp 
 [Google JSON Style Guide]:http://google-styleguide.googlecode.com/svn/trunk/jsoncstyleguide.xml
 [JSON Style Guide翻译]:https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md
+
+[Lesselements]: http://lesselements.com/
+
 
 [Modernizr]: http://modernizr.com/download/
 [DD_belatedPNG]: http://www.dillerdesign.com/experiment/DD_belatedPNG/
