@@ -145,13 +145,17 @@ _如：以下2种顺序均可_
     .ui-list{}
     .ui-nav{}
 
-#### CSS格式化：最终网站上输出的CSS，每个选择器单行，最优压缩，保留注释  
+#### CSS格式化：
+勿格式化，保留下面这种格式，后台程序会将CSS压缩成一行输出：
 
-    /* 注释内容 */
-    .box{z-index:33;width:22px;bottom:11px;background:transparent none repeat scroll 0 0 ;position:relative;}
-    .box2{z-index:44;width:55px;}
-    .box3,#box4{z-index:66;width:77px;}
-_可使用工具：[CSS Compressor] 并选择\[highest\]压缩_  
+    .box{
+        /* 勿格式化，增加可读性 */
+        background: none repeat scroll 0 0 transparent;
+        bottom: 11px;
+        position: relative;
+        width: 22px;
+        z-index: 33;
+    }
     
 ### XHTML 细化规范
 
