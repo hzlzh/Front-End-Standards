@@ -102,32 +102,32 @@
 
 _其中，@require为可选项目_ 
 
-* CSS换行制表：使用 4 个空格，而非\[tab\]
+* CSS换行制表：使用 2或4 个空格，而非\[tab\]
        
     * 书写格式：
         * CSS名称+冒号+属性  
-        如：`.box1{float:left;}`
-        * 最优压缩，省略一切可以省略的空格，字体名用`\`包含，中文需转义。  
-        如：`.box1,.box2,.box3{font-family:Courier,'Courier New';}`
+        如：`.box1 {float:left;}`
+        * 建议保留`{`左侧空格，字体名用`\`包含，中文需转义。  
+        如：`.box1,.box2,.box3 {font-family:Courier,'Courier New';}`
         
 #### CSS各属性的排列顺序：不做硬性要求  
 _如：以下2种顺序均可_
 
-    .box{
-        /* 顺序1 */
-        background: none repeat scroll 0 0 transparent;
-        bottom: 11px;
-        position: relative;
-        width: 22px;
-        z-index: 33;
+    .box {
+      /* 顺序1 */
+      background: none repeat scroll 0 0 transparent;
+      bottom: 11px;
+      position: relative;
+      width: 22px;
+      z-index: 33;
     }
-    .box{
-        /* 顺序2 */
-        z-index: 33;
-        width: 22px;
-        bottom: 11px;
-        background: transparent none repeat scroll 0 0 ;
-        position: relative;
+    .box {
+      /* 顺序2 */
+      z-index: 33;
+      width: 22px;
+      bottom: 11px;
+      background: transparent none repeat scroll 0 0 ;
+      position: relative;
     }
   
 #### 切记业界书写准则：HTML不要相互嵌套，CSS 推荐嵌套。  
@@ -149,12 +149,12 @@ _如：以下2种顺序均可_
 勿格式化，保留下面这种格式，后台程序会将CSS压缩成一行输出：
 
     .box{
-        /* 勿格式化，增加可读性 */
-        background: none repeat scroll 0 0 transparent;
-        bottom: 11px;
-        position: relative;
-        width: 22px;
-        z-index: 33;
+      /* 勿格式化，增加可读性 */
+      background: none repeat scroll 0 0 transparent;
+      bottom: 11px;
+      position: relative;
+      width: 22px;
+      z-index: 33;
     }
     
 ### XHTML 细化规范
