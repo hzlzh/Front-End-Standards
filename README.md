@@ -294,7 +294,22 @@ _如：以下2种顺序均可_
 
 
 ### Newletter制作规范
-* 整理排版中，待发
+* `CSS`只可使用**内联样式表**，如：`style="margin:0;"`
+* 设计之初遵循：**图上无文本，文本后无底纹**的规则
+* 使用 `MailChimp HTML Email CSS Fix` 参看下文链接
+* 引入 `CSS Reset for HTML Email` 参看下文链接
+* 使用`Table`布局而非`DIV`
+* 所有图片使用`IMG`标签，如：`<img style="style="display:block" "src="" />`
+* 可以适当使用占位符`spacer.gif`
+* 多用`<br />`换行而非`<p>`
+* 整体最佳宽度为：`550-600px`
+* 禁止使用`Javascript`
+* 正式发送给用户之前，多次测试
+
+更多细节参考下面链接：  
+[12 Killer Tips and Tricks for Building HTML Email]  
+[Coding HTML Newsletters(EDM’s)]
+
 
 ### 工具推荐(Mac)
 *for more app detial check -> [IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
@@ -439,3 +454,8 @@ _如：以下2种顺序均可_
 
 [placehold.us]:http://placehold.us/
 [placehold.it]:http://placehold.it/
+
+
+
+[12 Killer Tips and Tricks for Building HTML Email]: http://www.queness.com/post/8784/12-killer-tips-and-tricks-for-building-html-email
+[Coding HTML Newsletters(EDM’s)]: http://www.web-ed.com.au/2011/05/coding-html-newsletters-edms-quick-guide/
