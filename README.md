@@ -1,4 +1,4 @@
-# GeekPark 前端代码规范  
+# GeekPark 前端代码规范 v1.1  
 ![GeekPark](http://www.geekpark.net/public/img/icons/white-logo.jpg) 
 ![BusinessValue](http://businessvalue.com.cn/css/images/logo.gif)
 
@@ -11,24 +11,21 @@
     * [CSS 细化规范](#css-细化规范)
     * [XHTML 细化规范](#xhtml-细化规范)
     * [JS 细化规范](#js-细化规范)
-* [Newletter制作规范](#newletter制作规范)
+* [Newletter制作规范](#newletter-制作规范)
 * [工具推荐(Mac)](#工具推荐mac)
 * [相关技巧](#相关技巧)
 * [参考数据](#参考数据)
 
 ## 规范内容
 ----
-1. CSS reset 文件：[main.css] 或 [reset.css]
-所有代码都基于这个文件。重设浏览器，解决依赖引起的耦合问题。 
-    * `base.css` 的作用:
-        * CSS reset
-    * 其他功能：
-        * `.fn-clear` 清除浮动
-        * `.fn-hide/.fn-show` 相当于 `display:block;/display:none;`
-        * `.fn-left/.fn-right` 相当于 `float:left;/float:right;`
 
-2. 规范：
-此规范为参考规范，不是硬性要求，部分硬性约定见下一条\[书写约定\]，统一团队编码规范和风格。让所有代码都是有规可循的，并且能够得到沉淀，减少重复劳动。
+1. 规范：
+此规范为参考规范，不全是硬性要求，部分硬性约定见下一条[书写规范](#书写规范)，统一团队编码规范和风格。让所有代码都是有规可循的，并且能够得到沉淀，减少重复劳动。
+
+2. 文件结构包括：  
+-- [项目结构](#项目结构)  
+----|---- [CSS文件结构](#CSS-文件结构)  
+----|---- [JS文件结构](#JS-文件结构)  
  
 3. 工具：[通用兼容解决方案库]  
 常见浏览器兼容问题的解决方案，可以参考这里的库，只参考思路即可。
@@ -37,43 +34,70 @@
 ----
 ### 样式与内容分离
 
-#### 文件结构： 
+#### 项目结构： 
 >
-    ---
-     |---- images/                存放CSS文件中使用到的 image 图片  
-     |---- js/                    调用js文件  
-     |---- base.css               CSS reset 文件  
-     |---- style.css              样式表  
-     |---- index.html             内容文件  
+    --- 
+     |---- index.html             入口页    
+     |---- js/                    JS //具体见JS细化结构                 
+     |---- css/                   CSS //具体见CSS细化结构
 
 #### 重构步骤约定：
 1. `index.html` 全部样式附着于 `class="xxx"` **注：** _此时文件中不包含任何一个 id="xxx"_
 2. 为上一步书写 CSS style  
 **\[至此重构完成\]**
 3. 开始书写`js`交互文件，使用 `ID` 和 `Class` 定位被操作句柄
-4. 向 `index.html` 中需要的地方添加 id="xxx"  
+4. 向 `index.html` 中需要的地方添加 `id="xxx"` 及 `data-xxx="xxx"`  
 **\[至此交互效果完成\]**
 
 #### 命名规范：  
-* 文件及文件夹: 全部英文小写字母+数字或连接符"`-` , `_` "，不可出现中文等字符。  
-如：`../geekevent/css/style.css, jquery.1.x.x.js` 
+* 文件及文件夹: 全部英文小写字母+数字或连接符"`-` , `_` "，不可出现其他字符
+如：`../css/style.css, jquery.1.x.x.js` 
+* 文件：调用 `/libs` 文件需包含版本号，压缩文件需包含`min`关键词，其他插件则可不包含
+如：`/libs/jquery.1.9.1.js` `/libs/modernizr-1.7.min.js` `fileuploader.js` `plugins.js`
 * ID: [匈牙利命名法] & [小駝峰式命名法]  
 如：`firstName` `topBoxList` `footerCopyright`
 * Class: [减号连接符]  
 如：`top-item` `main-box` `box-list-item-1`
+* 尽量使用语义明确的单词命名，避免 `left` `bottom` 等方位性的词语
 
 #### 格式&编码：
-* 文本文件： .xxx UTF-8_\(无BOM\)_ 编码
-* 透明图片： .png _(PNG-24)_
-* 动态图片： .gif
-* 打包文件： .zip
+* 文本文件： `.xxx` UTF-8_\(无BOM\)_ 编码
+* 图片文件： `.png` _(PNG-24)_ `.jpg` _(压缩率8-12)_
+* 动态图片： `.gif`
+* 压缩文件： `.tar.gz` `.zip`
 
 ### CSS 细化规范
 
-#### 使用Less
-在`.less` 开始引入 [Lesselements]，之后调用如下属性传参即可。  
-`@import "elements.less";`
+#### CSS 文件结构： 
+>
+    --- ../css/
+     |---- css/libs/reset.css                  CSS reset文件
+     |---- … … 
+     |---- css/images/                         主 CSS-sprite 图片     
+     |---- css/style.css                       主 CSS 样式表
+     |---- … … 
+     |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
+     |---- css/xxx-style.css                   xxx 的 样式表
+     
+#### CSS(含Less) 文件结构： 
+>
+    --- ../css/
+     |---- css/libs/reset.less            CSS reset文件
+     |---- css/libs/elements.less         Less 函数复用文件
+     |---- … … 
+     |---- css/images/                         主 CSS-sprite 图片     
+     |---- css/style.less                      主样式Less
+     |---- css/style.css                       less -> css 自动生成
+     |---- … … 
+     |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
+     |---- css/xxx-style.less                  xxx 的 Less
+     |---- css/xxx-style.css                   less -> css 自动生成
 
+#### 使用Less
+在 `.less`文件头部引入 [reset.less]&[elements.less]，之后调用如下属性传参即可，具体使用说明见->[Lesselements]官方文档   
+
+    @import "reset.less";  
+    @import "elements.less";
 >
     .gradient
     .bw-gradient
@@ -91,24 +115,31 @@
     .columns
     .translate
 
+#### CSS reset
+CSS reset 文件使用：[reset.css] 或 [reset.less]   
+
+* reset文件用于重设各个浏览器的默认样式方案，解决其引起的耦合问题。  
+* 也可使用 `.clearfix` 清除浮动
+
 #### CSS 注释格式约定  
 >
     /*
     @name: Drop Down Menu
     @description: Style of top bar drop down menu.
-    @require: base.css
+    @require: reset.css
     @author: Andy Huang(andyahung@geekpark.net)
     */
 
-_其中，@require为可选项目_ 
+_其中，@require为可选项_ 
 
-* CSS换行制表：使用 2或4 个空格，而非\[tab\]
-       
-    * 书写格式：
-        * CSS名称+冒号+属性  
-        如：`.box1 {float:left;}`
-        * 建议保留`{`左侧空格，字体名用`\`包含，中文需转义。  
-        如：`.box1,.box2,.box3 {font-family:Courier,'Courier New';}`
+* CSS换行制表：使用 2 <del>或4</del> 个空格，而非\[Tab\]
+* 书写格式：
+    * CSS名称+冒号+属性  
+    如：`.box1 {float:left;}`
+    * 建议保留`{`左侧空格，字体名用`\`包含  
+    如：`.box1,.box2,.box3 {font-family:Courier,'Courier New';}`
+    * 避免中文，或使用转义，推荐前者  
+    如：`font-family: "Microsoft YaHei";` `font-family:\5fae\8f6f\96c5\9ed1;`
         
 #### CSS各属性的排列顺序：不做硬性要求  
 _如：以下2种顺序均可_
@@ -132,21 +163,21 @@ _如：以下2种顺序均可_
   
 #### 切记业界书写准则：HTML不要相互嵌套，CSS 推荐嵌套。  
     /* 推荐嵌套层级 */
-    .ui-icon-rarr{background:...}
-    .ui-icon-larr{background:...}
-    .ui-title{font-size:...}
-    .ui-nav .ui-list{...}
-    .ui-table .ui-list{...}
+    .ui-icon-rarr{}
+    .ui-icon-larr{}
+    .ui-title{}
+    .ui-nav .ui-list{}
+    .ui-table .ui-list{}
 
     /* 不推荐 */
-    .ui-icon-rarr{background:...}
-    .ui-icon-larr{background:...}
-    .ui-title{font-size:...}
+    .ui-icon-rarr{}
+    .ui-icon-larr{}
+    .ui-title{}
     .ui-list{}
     .ui-nav{}
 
 #### CSS格式化：
-勿格式化，保留下面这种格式，后台程序会将CSS压缩成一行输出：
+勿格式化，保留下面这种格式，增加可读性和可维护性，后期后台程序(如：PHP/Python)会将CSS压缩成 **一行** 输出：
 
     .box{
       /* 勿格式化，增加可读性 */
@@ -163,7 +194,6 @@ _如：以下2种顺序均可_
     <!--
     @name: Drop Down Menu
     @description: Style of top bar drop down menu.
-    @require: base.css
     @author: Andy Huang(andyahung@geekpark.net)
     -->
     
@@ -173,36 +203,25 @@ _如：以下2种顺序均可_
         </div>
     </div><!-- #header end-->
 
-* HTML换行缩进：采用 2 空格
+* HTML换行缩进：**采用 2 空格**
 
 #### 切记业界书写准则：HTML不要相互嵌套，CSS 推荐嵌套。  
     /* 推荐嵌套层级 */
       <ul class="ui-nav">
         <li class="ui-nav-item"> some text
-            <ul class="ui-nav-item-child">
-                <li> some text
-                    <ul class="ui-list">
-                        <li class="ui-list-item"> some text</li>
-                    </ul...
-            </ul>
+          <ul class="ui-nav-item-child">
+            <li> some text
+              <ul class="ui-list">
+                <li class="ui-list-item"> some text</li>
+              </ul
+            ...
+           </ul>
         </li>
-        <li...
-    </ul>
+        <li
+        ...
+      </ul>
 
-    /* 不推荐 */
-      <ul class="ui-nav">
-        <li class="ui-nav-item"> some text
-            <ul class="ui-nav-item-child">
-                <li> some text
-                    <ul class="ui-nav">
-                        <li class="ui-nav-item"> some text </li>
-                    </ul...
-            </ul>
-        </li>
-        <li...
-    </ul>
-
-##### \* 第一行统一使用：<!DOCTYPE html>
+##### \* 第一行统一使用HTML5标准：<!DOCTYPE html>
     <!DOCTYPE html>
     <html dir="ltr" lang="zh-CN">
     <head>
@@ -212,7 +231,7 @@ _如：以下2种顺序均可_
         <meta name="description" content="xxxxxxxxxxxxxxxxxxxx" />
         
 
-##### Meta 的使用：（需呀根据具体需求按需选择）
+##### Meta 的使用：（需根据具体项目选择）参考 [cool-head]
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Cache-Control" content="max-age=7200" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -220,7 +239,7 @@ _如：以下2种顺序均可_
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     
-    <script type='text/javascript' src='/js/xxx.js'></script>
+    <script type="text/javascript" src="/js/xxx.js"></script>
     <link rel="stylesheet" href="/css/xxx.css">
     
     <script type="text/javascript">
@@ -229,20 +248,21 @@ _如：以下2种顺序均可_
     </head>
 
 * `<img>`标签默认缺省格式：`<img src="xxx.png" alt="缺省时文字" />` 避免出现[src="" 问题]
-* `<a>`标签缺省格式：`<a href="#" title="链接名称">xxx</>` 注：`target="_blank"` 根据需求决定  
-* 所有标签需要符合XHTML标准
+* `<a>`标签缺省格式：`<a href="###" title="链接名称">xxx</>` 注：`target="_blank"` 根据需求决定  
+* <a>标签预留链接占位符使用`###`，参见：[a标签占位符问题]
+* 所有标签需要符合XHTML标准闭合
 * 一律统一标签结尾斜杠的书写形式：`<br />` `<hr />` 注意之间空格
-* 避免使用已过时标签，如：`<b>` `<u>` `<i>` 而是用 `<strong>` `<em>`等代替
+* 避免使用已过时标签，如：`<b>` `<u>` `<i>` 而用 `<strong>` `<em>`等代替
 * 使用`data-xxx`来添加自定义数据，如：`<input data-xxx="yyy"/>`
-* 避免使用`style="xxx:xxx"`的内联样式表
+* 避免使用`style="xxx:xxx;"`的内联样式表
 * 特殊符号使用参考[HTML 符号实体]
 
 ###JS 细化规范
 ----
 
-#####文件结构：
+##### JS 文件结构：
 >
-    ---
+    ---/js/
     |---- /libs/plugin-1/       使用到的js插件1  
     |---- /libs/plugin-2/       使用到的js插件2  
     |---- /libs/plugin-3/       使用到的js插件3  
@@ -254,14 +274,14 @@ _如：以下2种顺序均可_
 * 结束行需添加分号`;`
 * jQuery变量要求首字符为 `$`, 私有变量:首字符为`_`; 尽量避免全局变量.
 * 避免使用 eval()，setTimeOut使用调用函数，考虑重绘，回流 操作对页面影响  参看：[reflows，repaints]
-* JS调试使用`console.log()`及`console.dir()`进行，避免使用弹出框，线上版不能要注释掉所有的调试代码
+* JS调试使用`console.log()`及`console.dir()`进行，避免使用弹出框，线上版需要注释所有调试代码
 * JS压缩混淆工具: [JS Compressor]  如果使用了压缩，需要留 `name-src.js`在同路径供今后修改使用
 
-#####jQuery Call
+##### jQuery Call
     <!-- Grab Google CDN jQuery. fall back to local if necessary -->  
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
     <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>            
-#####jQuery Plugin：
+##### jQuery Plugin：
 
 * IE对HTML5标签支持，以及浏览器特性检测：[Modernizr] & [html5shiv]
 * IE6 PNG 图片支持：[DD_belatedPNG]
@@ -282,9 +302,9 @@ _如：以下2种顺序均可_
 * 浮动话题泡：[jQuery grumble]
 * 旋转进度：[jQuery Knob]
 
-#####JSON格式规范：参考[JSON Style Guide翻译]，原版：[Google JSON Style Guide]
+##### JSON格式规范：参考[JSON Style Guide翻译]，原版：[Google JSON Style Guide]
 
-###HTML 细化规范
+### HTML 细化规范
 * HTML `head`部分的结构参看：[cool-head] \(摘取必要内容即可)
 * `css` 文件置于都**头部**
 * `jQuery` 及 `Google Analytics`引用置于**头部**
@@ -293,7 +313,7 @@ _如：以下2种顺序均可_
 * HTML 占位图片使用 [placehold.us] & [placehold.it] 图片服务
 
 
-### Newletter制作规范
+### Newletter 制作规范
 * `CSS`只可使用**内联样式表**，如：`style="margin:0;"`
 * 设计之初遵循：**图上无文本，文本后无底纹**的规则
 * 使用 `MailChimp HTML Email CSS Fix` 参看下文链接
@@ -313,19 +333,40 @@ _如：以下2种顺序均可_
 
 ### 工具推荐(Mac)
 *for more app detial check -> [IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
+**前端相关**
 
 * 编辑器：[Sublime Text 2] / [TextMate 2] / [Vim]
-* 浏览器：[Chrome] / [Firefox] + [Firebug]
+* 命令行：[iTerm2]
+* 浏览器调试环境：[Chrome] / [Firefox] + [Firebug]
+* 移动设备浏览器：[Mozilla Fennec]
 * 兼容性测试：[VirtualBox] + Win XP（IE 8）
-* 版本控制工具：[Versions] / [GitHub for Mac] / [SourceTree]
+* 版本控制工具：[GitHub for Mac] / [Versions] / [SourceTree]
 * FTP工具：[Filezilla] / [ForkLift]
-* HTTP代理或镜像：[Charles]
+* HTTP抓包及Post/Get模拟：[Charles]
 * PHP集成环境：[XAMPP for Mac]
+* SQL数据库管理：[Sequel Pro]
 * 标注工具：[Mark Man] / [xScope]
 * 取色拾色器：[Sip] / [Snip] / [xScope]
 * MarkDown编辑器：[Mou]
-* 免刷新环境：[LiveReLoad] / [CodeKit]
-* 其他相关工具：[Cookie] / [ColorSchemer Studio] / [Less] / [SpriteRight] / [iTerm2] 
+* 浏览器免刷新开发环境：[LiveReLoad] / [CodeKit]
+* CSS Sprite切图工具：[SpriteRight]
+* Less -> CSS 编译：[CodeKit] / [LiveReLoad] / [Less]
+* 配色方案工具：[ColorSchemer Studio]
+* 多浏览器Cookie管理：[Cookie]
+* 图片素材收集：[Sparkbox] / [Pixa]
+
+**其他效率工具**
+
+* 快速启动及切换app：[Alfred]
+* 笔记：[Evernote]
+* 压缩解压：[Keka] / [iPack]
+
+**Firefox 扩展**
+
+**Chrome 扩展**  
+待添加...
+
+
 
 ### 相关技巧
 [Wiki page index](https://github.com/GeekPark/Doc/wiki/_pages)  
@@ -371,7 +412,7 @@ _如：以下2种顺序均可_
 | 320x480       |      10.05% |
 | 1024x768      |       5.93% |   
 
-本规范目前完善中，有任何新的条例欢迎 `Fork` 本项目修改后 `Pull Request`
+此规范持续更新维护中，可以 `Fork` 本项目通过 `Pull Request` 贡献规范。
 
 [GeekPark]: http://geekpark.net/ "http://geekpark.net/"
 [ITvalue]: http://www.itvalue.com.cn/ "http://www.itvalue.com.cn/"
@@ -387,6 +428,7 @@ _如：以下2种顺序均可_
 
 [reflows，repaints]: http://www.zhangxinxu.com/wordpress/2010/01/%E5%9B%9E%E6%B5%81%E4%B8%8E%E9%87%8D%E7%BB%98%EF%BC%9Acss%E6%80%A7%E8%83%BD%E8%AE%A9javascript%E5%8F%98%E6%85%A2%EF%BC%9F/  "重绘,回流参考"
 [src="" 问题]: http://js8.in/555.html "src="" 问题"
+[a标签占位符问题]: http://www.v2ex.com/t/48511/ "a标签占位符问题"
 
 [匈牙利命名法]: http://zh.wikipedia.org/wiki/%E5%8C%88%E7%89%99%E5%88%A9%E5%91%BD%E5%90%8D%E6%B3%95 "Wiki:匈牙利命名法"
 [小駝峰式命名法]:http://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB "小駝峰式命名法"
@@ -451,6 +493,15 @@ _如：以下2种顺序均可_
 [CodeKit]: http://incident57.com/codekit/
 [SpriteRight]:http://itunes.apple.com/us/app/spriteright/id488584662?mt=12
 [iTerm2]: http://www.iterm2.com/
+[Mozilla Fennec]: http://www.mozilla.org/projects/fennec
+[Sequel Pro]: http://www.sequelpro.com/
+[Sparkbox]: http://seesparkbox.com/
+[Pixa]: http://www.pixa-app.com/
+[Alfred]: http://www.alfredapp.com/
+[Evernote]: http://www.evernote.com/
+[Keka]: https://itunes.apple.com/us/app/keka/id470158793?mt=12
+[iPack]: https://itunes.apple.com/us/app/ipack/id433386677?mt=12
+
 
 [placehold.us]:http://placehold.us/
 [placehold.it]:http://placehold.it/
