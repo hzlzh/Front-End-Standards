@@ -1,47 +1,65 @@
 # GeekPark 前端代码规范 v1.1  
-![GeekPark](http://www.geekpark.net/public/img/icons/white-logo.jpg) 
-![BusinessValue](http://businessvalue.com.cn/css/images/logo.gif)
+![GeekPark](http://www.geekpark.net/public/img/icons/white-logo.jpg "极客公园 | 发现产品的价值") 
+![BusinessValue](http://businessvalue.com.cn/css/images/logo.gif "商业价值 | 科技改变商业 创新赢得未来")
+![ITvalue](http://www.itvalue.com.cn/public/images/forward/itvalue-logo.png "ITvalue | 基于知识分享的CIO人际网络")
 
-[GeekPark] & [ITvalue] 前端开发团队遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。
+[GeekPark] & [BusinessValue] & [ITvalue] 前端开发团队遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。
 
 ## 索引
 * [规范内容](#规范内容)
+    * [规范说明](#规范说明)
+    * [结构说明](#结构说明)
 * [书写规范](#书写规范)
     * [样式与内容分离](#样式与内容分离)
+        * [项目结构](#项目结构)
+        * [重构步骤约定](#重构步骤约定)
+        * [命名规范](#命名规范)
+        * [格式&编码](#格式&编码)
     * [CSS 细化规范](#css-细化规范)
+        * [CSS各属性](#css各属性的排列顺序：不做硬性要求)
+        * [CSS嵌套规则](#css嵌套规则：html不要相互嵌套，css-推荐嵌套)
+        * [CSS格式化](#css格式化)
     * [XHTML 细化规范](#xhtml-细化规范)
+        * [HTML 注释格式](#html-注释格式约定)
+        * [HTML嵌套规则](#html嵌套规则：html不要相互嵌套，css-推荐嵌套)
     * [JS 细化规范](#js-细化规范)
+        * [JS 文件结构](#js-文件结构)
+        * [jQuery Call](#jquery-call)
+        * [jQuery Plugin](#jquery-plugin)
+        * [JSON格式规范](#json格式规范)
 * [Newletter制作规范](#newletter-制作规范)
-* [工具推荐(Mac)](#工具推荐mac)
+    * [生产力工具推荐(Mac)](#生产力工具推荐Mac)
+    * [前端相关工具](#前端相关工具)
+    * [其他效率工具](#其他效率工具)
+    * [Firefox 扩展](#firefox-扩展)
+    * [Chrome 扩展](#chrome-扩展)
+    * [Sublime Text 2 插件](#sublime-text-2-插件)
 * [相关技巧](#相关技巧)
 * [参考数据](#参考数据)
 
-## 规范内容
+## 规范梗概
 ----
 
-1. 规范：
+##### 规范说明  
 此规范为参考规范，不全是硬性要求，部分硬性约定见下一条[书写规范](#书写规范)，统一团队编码规范和风格。让所有代码都是有规可循的，并且能够得到沉淀，减少重复劳动。
 
-2. 文件结构包括：  
+##### 结构说明  
 -- [项目结构](#项目结构)  
 ----|---- [CSS文件结构](#CSS-文件结构)  
 ----|---- [JS文件结构](#JS-文件结构)  
- 
-3. 工具：[通用兼容解决方案库]  
-常见浏览器兼容问题的解决方案，可以参考这里的库，只参考思路即可。
 
 ## 书写规范
 ----
 ### 样式与内容分离
 
-#### 项目结构： 
+#### 项目结构  
 >
     --- 
      |---- index.html             入口页    
      |---- js/                    JS //具体见JS细化结构                 
      |---- css/                   CSS //具体见CSS细化结构
 
-#### 重构步骤约定：
+#### 重构步骤约定
 1. `index.html` 全部样式附着于 `class="xxx"` **注：** _此时文件中不包含任何一个 id="xxx"_
 2. 为上一步书写 CSS style  
 **\[至此重构完成\]**
@@ -49,7 +67,7 @@
 4. 向 `index.html` 中需要的地方添加 `id="xxx"` 及 `data-xxx="xxx"`  
 **\[至此交互效果完成\]**
 
-#### 命名规范：  
+#### 命名规范  
 * 文件及文件夹: 全部英文小写字母+数字或连接符"`-` , `_` "，不可出现其他字符
 如：`../css/style.css, jquery.1.x.x.js` 
 * 文件：调用 `/libs` 文件需包含版本号，压缩文件需包含`min`关键词，其他插件则可不包含
@@ -60,7 +78,7 @@
 如：`top-item` `main-box` `box-list-item-1`
 * 尽量使用语义明确的单词命名，避免 `left` `bottom` 等方位性的词语
 
-#### 格式&编码：
+#### 格式&编码
 * 文本文件： `.xxx` UTF-8_\(无BOM\)_ 编码
 * 图片文件： `.png` _(PNG-24)_ `.jpg` _(压缩率8-12)_
 * 动态图片： `.gif`
@@ -68,7 +86,7 @@
 
 ### CSS 细化规范
 
-#### CSS 文件结构： 
+#### CSS 文件结构 
 >
     --- ../css/
      |---- css/libs/reset.css                  CSS reset文件
@@ -79,7 +97,7 @@
      |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
      |---- css/xxx-style.css                   xxx 的 样式表
      
-#### CSS(含Less) 文件结构： 
+#### CSS(含Less) 文件结构  
 >
     --- ../css/
      |---- css/libs/reset.less            CSS reset文件
@@ -161,7 +179,7 @@ _如：以下2种顺序均可_
       position: relative;
     }
   
-#### 切记业界书写准则：HTML不要相互嵌套，CSS 推荐嵌套。  
+#### 切记业界书写准则：HTML不要相互嵌套，CSS 推荐嵌套    
     /* 推荐嵌套层级 */
     .ui-icon-rarr{}
     .ui-icon-larr{}
@@ -176,7 +194,7 @@ _如：以下2种顺序均可_
     .ui-list{}
     .ui-nav{}
 
-#### CSS格式化：
+#### CSS格式化  
 勿格式化，保留下面这种格式，增加可读性和可维护性，后期后台程序(如：PHP/Python)会将CSS压缩成 **一行** 输出：
 
     .box{
@@ -205,7 +223,7 @@ _如：以下2种顺序均可_
 
 * HTML换行缩进：**采用 2 空格**
 
-#### 切记业界书写准则：HTML不要相互嵌套，CSS 推荐嵌套。  
+#### 切记业界书写准则：HTML不要相互嵌套，CSS 推荐嵌套  
     /* 推荐嵌套层级 */
       <ul class="ui-nav">
         <li class="ui-nav-item"> some text
@@ -257,10 +275,10 @@ _如：以下2种顺序均可_
 * 避免使用`style="xxx:xxx;"`的内联样式表
 * 特殊符号使用参考[HTML 符号实体]
 
-###JS 细化规范
+### JS 细化规范
 ----
 
-##### JS 文件结构：
+##### JS 文件结构
 >
     ---/js/
     |---- /libs/plugin-1/       使用到的js插件1  
@@ -281,7 +299,7 @@ _如：以下2种顺序均可_
     <!-- Grab Google CDN jQuery. fall back to local if necessary -->  
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
     <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>            
-##### jQuery Plugin：
+##### jQuery Plugin
 
 * IE对HTML5标签支持，以及浏览器特性检测：[Modernizr] & [html5shiv]
 * IE6 PNG 图片支持：[DD_belatedPNG]
@@ -302,7 +320,8 @@ _如：以下2种顺序均可_
 * 浮动话题泡：[jQuery grumble]
 * 旋转进度：[jQuery Knob]
 
-##### JSON格式规范：参考[JSON Style Guide翻译]，原版：[Google JSON Style Guide]
+##### JSON格式规范  
+参考[JSON Style Guide翻译]，原版：[Google JSON Style Guide]
 
 ### HTML 细化规范
 * HTML `head`部分的结构参看：[cool-head] \(摘取必要内容即可)
@@ -323,7 +342,7 @@ _如：以下2种顺序均可_
 * 可以适当使用占位符`spacer.gif`
 * 多用`<br />`换行而非`<p>`
 * 整体最佳宽度为：`550-600px`
-* 禁止使用`Javascript`
+* 不使用`Javascript`
 * 正式发送给用户之前，多次测试
 
 更多细节参考下面链接：  
@@ -331,9 +350,9 @@ _如：以下2种顺序均可_
 [Coding HTML Newsletters(EDM’s)]
 
 
-### 工具推荐(Mac)
+### 生产力工具推荐(Mac)
 *for more app detial check -> [IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
-**前端相关**
+##### 前端相关工具
 
 * 编辑器：[Sublime Text 2] / [TextMate 2] / [Vim]
 * 命令行：[iTerm2]
@@ -355,30 +374,30 @@ _如：以下2种顺序均可_
 * 多浏览器Cookie管理：[Cookie]
 * 图片素材收集：[Sparkbox] / [Pixa]
 
-**其他效率工具**
+##### 其他效率工具
 
 * 快速启动及切换app：[Alfred]
 * 笔记：[Evernote]
 * 压缩解压：[Keka] / [iPack]
 
-**Firefox 扩展**
-
-**Chrome 扩展**  
-待添加...
-
-
+##### 其他收集
+* Firefox 扩展收藏集 -> [Firefox Add-ons collections]
+* Chrome 扩展 -> 待添加
+* Sublime Text 2 技巧  -> [ST2 资源技巧汇总]
 
 ### 相关技巧
-[Wiki page index](https://github.com/GeekPark/Doc/wiki/_pages)  
+[Wiki page index]
+
 * [各浏览器的缓存清除方法]  
 * [测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]  
-* [关于Mac Win Linux跨系统传文件，文件名乱码的解决方案]
+* [关于Mac Win Linux跨系统传文件，文件名乱码的解决方案]  
+* [技术团队"路由代理"解决方案和使用须知]
 
 ### 参考数据
 涉及到 `设计`->`重构`->`兼容性`->`测试` 时可参考各浏览器的占用情况  
 *-- updated: `2012-08`*  via `Google Analytics of GeekPark`  
 
-| 总浏览器        |     占有率 |
+| 总浏览器分布     |     占有率 |
 |:---------------|----------:|
 | Chrome         |    38.41% |
 | IE             |    23.10% |
@@ -412,18 +431,15 @@ _如：以下2种顺序均可_
 | 320x480       |      10.05% |
 | 1024x768      |       5.93% |   
 
-此规范持续更新维护中，可以 `Fork` 本项目通过 `Pull Request` 贡献规范。
+此规范基于 [MIT License] 开源，持续更新维护中，欢迎 `Fork` 本项并目通过 `Pull Request` 贡献规范。
 
 [GeekPark]: http://geekpark.net/ "http://geekpark.net/"
 [ITvalue]: http://www.itvalue.com.cn/ "http://www.itvalue.com.cn/"
+[BusinessValue]: http://www.businessvalue.com.cn/
 
 [Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
-[Alice]: https://github.com/alipay/alice "Alice 支付宝前端样式解决方案"
 [main.css]: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css "CSS reset 文件"
 [reset.css]: https://github.com/murtaugh/HTML5-Reset/blob/master/_/css/style.css
-[CSS 规范]: http://aliceui.com/css-spec/ "CSS 代码书写规范"
-[样式库构建规范]: http://aliceui.com/alice-css-guide/ "该项不予参考"
-[通用兼容解决方案库]: http://aliceui.com/alice-css/#solutions "该项不予参考"
 [HTML5 验证]: http://html5.validator.nu/
 
 [reflows，repaints]: http://www.zhangxinxu.com/wordpress/2010/01/%E5%9B%9E%E6%B5%81%E4%B8%8E%E9%87%8D%E7%BB%98%EF%BC%9Acss%E6%80%A7%E8%83%BD%E8%AE%A9javascript%E5%8F%98%E6%85%A2%EF%BC%9F/  "重绘,回流参考"
@@ -466,6 +482,7 @@ _如：以下2种顺序均可_
 [各浏览器的缓存清除方法]: https://github.com/GeekPark/Doc/wiki/%5B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E7%BC%93%E5%AD%98%5D%E5%90%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B5%8B%E8%AF%95%E7%BD%91%E9%A1%B5%E6%97%B6%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9A%84%E6%96%B9%E6%B3%95
 [测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]: https://github.com/GeekPark/Doc/wiki/%5B%E6%B5%8B%E8%AF%95%E6%8A%80%E5%B7%A7%5DGmail-%E6%B7%BB%E5%8A%A0%E8%AF%8D%E7%BC%80(.--)%E8%8E%B7%E5%BE%97%E5%A4%9A%E4%B8%AA%E9%82%AE%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95
 [关于Mac Win Linux跨系统传文件，文件名乱码的解决方案]: https://github.com/GeekPark/Doc/wiki/%E5%85%B3%E4%BA%8E%5BMac%5D-%5BWin%5D-%5BLinux%5D%E8%B7%A8%E7%B3%BB%E7%BB%9F%E4%BC%A0%E6%96%87%E4%BB%B6%EF%BC%8C%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88
+[技术团队"路由代理"解决方案和使用须知]: https://github.com/GeekPark/Doc/wiki/%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F%5B%E8%B7%AF%E7%94%B1%E4%BB%A3%E7%90%86%5D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%92%8C%E4%BD%BF%E7%94%A8%E9%A1%BB%E7%9F%A5
 
 [Sublime Text 2]:http://www.sublimetext.com/2
 [TextMate 2]:https://github.com/textmate/textmate
@@ -507,6 +524,11 @@ _如：以下2种顺序均可_
 [placehold.it]:http://placehold.it/
 
 
+[Firefox Add-ons collections]: https://addons.mozilla.org/en-US/firefox/collections/hzlzh/hzlzh/
+[ST2 资源技巧汇总]: http://www.douban.com/group/topic/28027863/
+[Wiki page index]: https://github.com/GeekPark/Doc/wiki/_pages
 
 [12 Killer Tips and Tricks for Building HTML Email]: http://www.queness.com/post/8784/12-killer-tips-and-tricks-for-building-html-email
 [Coding HTML Newsletters(EDM’s)]: http://www.web-ed.com.au/2011/05/coding-html-newsletters-edms-quick-guide/
+
+[MIT License]: http://en.wikipedia.org/wiki/MIT_License
