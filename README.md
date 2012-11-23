@@ -1,12 +1,12 @@
 # GeekPark 前端代码规范 v1.1  
-![GeekPark](http://www.geekpark.net/public/img/icons/white-logo.jpg "极客公园 | 发现产品的价值") 
+![GeekPark](http://www.geekpark.net/public/img/icons/logo-black.png "极客公园 | 发现产品的价值") 
 ![BusinessValue](http://businessvalue.com.cn/css/images/logo.gif "商业价值 | 科技改变商业 创新赢得未来")
 ![ITvalue](http://www.itvalue.com.cn/public/images/forward/itvalue-logo.png "ITvalue | 基于知识分享的CIO人际网络")
 
 [GeekPark] & [BusinessValue] & [ITvalue] 前端开发团队遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。
 
 ## 索引
-* [规范内容](#规范内容)
+* [规范内容](#规范梗概)
     * [规范说明](#规范说明)
     * [结构说明](#结构说明)
 * [书写规范](#书写规范)
@@ -14,8 +14,9 @@
         * [项目结构](#项目结构)
         * [重构步骤约定](#重构步骤约定)
         * [命名规范](#命名规范)
-        * [格式&编码](#格式&编码)
+        * [格式&编码](#格式编码)
     * [CSS 细化规范](#css-细化规范)
+        * [CSS(含Less)文件结构](#CSS含less文件结构)
         * [CSS各属性](#css各属性的排列顺序：不做硬性要求)
         * [CSS嵌套规则](#css嵌套规则)
         * [CSS格式化](#css格式化)
@@ -43,8 +44,8 @@
 
 ##### 结构说明  
 -- [项目结构](#项目结构)  
-----|---- [CSS文件结构](#CSS-文件结构)  
-----|---- [JS文件结构](#JS-文件结构)  
+----|---- [CSS文件结构](#css-文件结构)  
+----|---- [JS文件结构](#js-文件结构)  
 
 ## 书写规范
 ----
@@ -177,7 +178,7 @@ _如：以下2种顺序均可_
       position: relative;
     }
   
-#### 切记业界书写准则：HTML不要相互嵌套，CSS 推荐嵌套    
+#### CSS嵌套规则    
     /* 推荐嵌套层级 */
     .ui-icon-rarr{}
     .ui-icon-larr{}
@@ -221,7 +222,7 @@ _如：以下2种顺序均可_
 
 * HTML换行缩进：**采用 2 空格**
 
-#### 切记业界书写准则：HTML不要相互嵌套，CSS 推荐嵌套  
+#### HTML嵌套规则  
     /* 推荐嵌套层级 */
       <ul class="ui-nav">
         <li class="ui-nav-item"> some text
@@ -323,16 +324,16 @@ _如：以下2种顺序均可_
 
 ### HTML 细化规范
 * HTML `head`部分的结构参看：[cool-head] \(摘取必要内容即可)
-* `css` 文件置于都**头部**
-* `jQuery` 及 `Google Analytics`引用置于**头部**
-* 其他效果`js`及`统计代码` 文件置于**尾部**
+* `css` 文件置于都 **头部**
+* `jQuery` 及 `Google Analytics`引用置于 **头部**
+* 其他效果`js`及`统计代码` 文件置于 **尾部**
 * HTML 代码尽量过一遍[HTML5 验证]
-* HTML 占位图片使用 [placehold.us] & [placehold.it] 图片服务
+* HTML 占位图片使用 [temp.im] & [placehold.us] 图片服务
 
 
 ### Newletter 制作规范
-* `CSS`只可使用**内联样式表**，如：`style="margin:0;"`
-* 设计之初遵循：**图上无文本，文本后无底纹**的规则
+* `CSS`只可使用 **内联样式表** ，如：`style="margin:0;"`
+* 设计之初遵循： **图上无文本，文本后无底纹** 的规则
 * 使用 `MailChimp HTML Email CSS Fix` 参看下文链接
 * 引入 `CSS Reset for HTML Email` 参看下文链接
 * 使用`Table`布局而非`DIV`
@@ -435,11 +436,6 @@ _如：以下2种顺序均可_
 [ITvalue]: http://www.itvalue.com.cn/ "http://www.itvalue.com.cn/"
 [BusinessValue]: http://www.businessvalue.com.cn/
 
-[Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
-[main.css]: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css "CSS reset 文件"
-[reset.css]: https://github.com/murtaugh/HTML5-Reset/blob/master/_/css/style.css
-[HTML5 验证]: http://html5.validator.nu/
-
 [reflows，repaints]: http://www.zhangxinxu.com/wordpress/2010/01/%E5%9B%9E%E6%B5%81%E4%B8%8E%E9%87%8D%E7%BB%98%EF%BC%9Acss%E6%80%A7%E8%83%BD%E8%AE%A9javascript%E5%8F%98%E6%85%A2%EF%BC%9F/  "重绘,回流参考"
 [src="" 问题]: http://js8.in/555.html "src="" 问题"
 [a标签占位符问题]: http://www.v2ex.com/t/48511/ "a标签占位符问题"
@@ -453,6 +449,9 @@ _如：以下2种顺序均可_
 [JSON Style Guide翻译]:https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md
 
 [Lesselements]: http://lesselements.com/
+[Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
+[reset.css]: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css "CSS reset 文件"
+[HTML5 验证]: http://html5.validator.nu/
 
 
 [Modernizr]: http://modernizr.com/download/
@@ -517,10 +516,8 @@ _如：以下2种顺序均可_
 [Keka]: https://itunes.apple.com/us/app/keka/id470158793?mt=12
 [iPack]: https://itunes.apple.com/us/app/ipack/id433386677?mt=12
 
-
+[temp.im]: http://temp.im/ 'hosted on Github'
 [placehold.us]:http://placehold.us/
-[placehold.it]:http://placehold.it/
-
 
 [Firefox Add-ons collections]: https://addons.mozilla.org/en-US/firefox/collections/hzlzh/hzlzh/
 [ST2 资源技巧汇总]: http://www.douban.com/group/topic/28027863/
