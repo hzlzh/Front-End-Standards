@@ -430,7 +430,7 @@ _如：以下2种顺序均可_
 | 320x480       |      10.05% |
 | 1024x768      |       5.93% |   
 
-此规范基于 [MIT License] 开源，持续更新维护中，欢迎 `Fork` 本项并目通过 `Pull Request` 贡献规范。
+此规范基于 [MIT License] 开源，持续更新维护中，欢迎 `Star` 或 `Fork` 本项并目通过 `Pull Request` 贡献规范。
 
 [GeekPark]: http://geekpark.net/ "http://geekpark.net/"
 [ITvalue]: http://www.itvalue.com.cn/ "http://www.itvalue.com.cn/"
@@ -450,9 +450,9 @@ _如：以下2种顺序均可_
 
 [Lesselements]: http://lesselements.com/
 [Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
-[reset.css]: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css "CSS reset 文件"
-[reset.less]: #
-[elements.less]: #
+[reset.css]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.css "CSS reset 文件"
+[reset.less]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/elements.less "reset.less from HTML5 Boilerplate"
+[elements.less]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.less "elements.less from lesselements"
 [HTML5 验证]: http://html5.validator.nu/
 
 
@@ -518,7 +518,7 @@ _如：以下2种顺序均可_
 [Keka]: https://itunes.apple.com/us/app/keka/id470158793?mt=12
 [iPack]: https://itunes.apple.com/us/app/ipack/id433386677?mt=12
 
-[temp.im]: http://temp.im/ 'hosted on Github'
+[temp.im]: http://temp.im/
 [placehold.us]:http://placehold.us/
 
 [Firefox Add-ons collections]: https://addons.mozilla.org/en-US/firefox/collections/hzlzh/hzlzh/
