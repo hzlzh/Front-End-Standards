@@ -1,0 +1,3 @@
+[submodule "ref/cool-head"]
+	path = ref/cool-head
+	url = git@github.com:hzlzh/cool-head.git

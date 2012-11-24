@@ -29,7 +29,7 @@
         * [jQuery Plugin](#jquery-plugin)
         * [JSON格式规范](#json格式规范)
 * [Newletter制作规范](#newletter-制作规范)
-    * [生产力工具推荐(Mac)](#生产力工具推荐Mac)
+    * [生产力工具推荐(Mac)](#生产力工具推荐mac)
     * [前端相关工具](#前端相关工具)
     * [其他效率工具](#其他效率工具)
     * [其他收集](#其他收集)
@@ -451,6 +451,8 @@ _如：以下2种顺序均可_
 [Lesselements]: http://lesselements.com/
 [Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
 [reset.css]: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css "CSS reset 文件"
+[reset.less]: #
+[elements.less]: #
 [HTML5 验证]: http://html5.validator.nu/
 
 
