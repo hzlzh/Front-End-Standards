@@ -6,7 +6,7 @@
 [GeekPark] & [BusinessValue] & [ITvalue] 前端开发团队遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。
 
 ## 索引
-* [规范内容](#规范梗概)
+* [规范梗概](#规范梗概)
     * [规范说明](#规范说明)
     * [结构说明](#结构说明)
 * [书写规范](#书写规范)
@@ -16,7 +16,7 @@
         * [命名规范](#命名规范)
         * [格式&编码](#格式编码)
     * [CSS 细化规范](#css-细化规范)
-        * [CSS(含Less)文件结构](#CSS含less文件结构)
+        * [CSS(含Less)文件结构](#css含less文件结构)
         * [CSS各属性](#css各属性的排列顺序：不做硬性要求)
         * [CSS嵌套规则](#css嵌套规则)
         * [CSS格式化](#css格式化)
@@ -113,8 +113,8 @@
 #### 使用Less
 在 `.less`文件头部引入 [reset.less]&[elements.less]，之后调用如下属性传参即可，具体使用说明见->[Lesselements]官方文档   
 
-    @import "reset.less";  
-    @import "elements.less";
+    @import "libs/reset.less";  
+    @import "libs/elements.less";
 >
     .gradient
     .bw-gradient
@@ -248,7 +248,7 @@ _如：以下2种顺序均可_
         <meta name="description" content="xxxxxxxxxxxxxxxxxxxx" />
         
 
-##### Meta 的使用：（需根据具体项目选择）参考 [cool-head]
+##### Meta 的使用：（需要根据具体需求按需选择）可参看：[cool-head]
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Cache-Control" content="max-age=7200" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -346,7 +346,7 @@ _如：以下2种顺序均可_
 
 更多细节参考下面链接：  
 [12 Killer Tips and Tricks for Building HTML Email]  
-[Coding HTML Newsletters(EDM’s)]
+[Coding HTML Newsletters\(EDM’s\)]
 
 
 ### 生产力工具推荐(Mac)
@@ -434,7 +434,7 @@ _如：以下2种顺序均可_
 
 [GeekPark]: http://geekpark.net/ "http://geekpark.net/"
 [ITvalue]: http://www.itvalue.com.cn/ "http://www.itvalue.com.cn/"
-[BusinessValue]: http://www.businessvalue.com.cn/
+[BusinessValue]: http://www.businessvalue.com.cn/ "http://www.businessvalue.com.cn/"
 
 [reflows，repaints]: http://www.zhangxinxu.com/wordpress/2010/01/%E5%9B%9E%E6%B5%81%E4%B8%8E%E9%87%8D%E7%BB%98%EF%BC%9Acss%E6%80%A7%E8%83%BD%E8%AE%A9javascript%E5%8F%98%E6%85%A2%EF%BC%9F/  "重绘,回流参考"
 [src="" 问题]: http://js8.in/555.html "src="" 问题"
@@ -451,8 +451,8 @@ _如：以下2种顺序均可_
 [Lesselements]: http://lesselements.com/
 [Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
 [reset.css]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.css "CSS reset 文件"
-[reset.less]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/elements.less "reset.less from HTML5 Boilerplate"
-[elements.less]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.less "elements.less from lesselements"
+[reset.less]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.less "reset.less from HTML5 Boilerplate"
+[elements.less]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/elements.less "elements.less from lesselements"
 [HTML5 验证]: http://html5.validator.nu/
 
 
@@ -526,6 +526,6 @@ _如：以下2种顺序均可_
 [Wiki page index]: https://github.com/GeekPark/Doc/wiki/_pages
 
 [12 Killer Tips and Tricks for Building HTML Email]: http://www.queness.com/post/8784/12-killer-tips-and-tricks-for-building-html-email
-[Coding HTML Newsletters(EDM’s)]: http://www.web-ed.com.au/2011/05/coding-html-newsletters-edms-quick-guide/
+[Coding HTML Newsletters\(EDM’s\)]: http://www.web-ed.com.au/2011/05/coding-html-newsletters-edms-quick-guide/
 
 [MIT License]: http://en.wikipedia.org/wiki/MIT_License
