@@ -412,7 +412,6 @@ _如：以下2种顺序均可_
     	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
 
-
 ### Newletter 制作规范
 * `CSS`只可使用 **内联样式表** ，如：`style="margin:0;"`
 * 设计之初遵循： **图上无文本，文本后无底纹** 的规则
@@ -430,7 +429,6 @@ _如：以下2种顺序均可_
 [12 Killer Tips and Tricks for Building HTML Email]  
 [Coding HTML Newsletters\(EDM’s\)]
 
-
 ### 生产力工具推荐(Mac)
 *for more app detial check -> [IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
 ##### 前端相关工具
@@ -446,7 +444,7 @@ _如：以下2种顺序均可_
 * PHP集成环境：[XAMPP for Mac]
 * SQL数据库管理：[Sequel Pro]
 * 标注工具：[Mark Man] / [xScope]
-* 取色拾色器：[Sip] / [Snip] / [xScope]
+* 取色拾色器： [Frank DeLoupe] / [Sip] / [Snip] / [xScope]
 * MarkDown编辑器：[Mou]
 * 浏览器免刷新开发环境：[LiveReLoad] / [CodeKit]
 * CSS Sprite切图工具：[SpriteRight]
@@ -459,7 +457,7 @@ _如：以下2种顺序均可_
 
 * 快速启动及切换app：[Alfred]
 * 笔记：[Evernote]
-* 压缩解压：[Keka] / [iPack]
+* 压缩解压：[The Unarchiver] / [Keka] / [iPack]
 
 ##### 其他收集
 * Firefox 扩展收藏集 -> [Firefox Add-ons collections]
@@ -540,7 +538,6 @@ _如：以下2种顺序均可_
 [elements.less]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/elements.less "elements.less from lesselements"
 [HTML5 验证]: http://html5.validator.nu/
 
-
 [Modernizr]: http://modernizr.com/download/
 [DD_belatedPNG]: http://www.dillerdesign.com/experiment/DD_belatedPNG/
 [html5shiv]: https://github.com/aFarkas/html5shiv
@@ -602,11 +599,13 @@ _如：以下2种顺序均可_
 [Pixa]: http://www.pixa-app.com/
 [Alfred]: http://www.alfredapp.com/
 [Evernote]: http://www.evernote.com/
+[The Unarchiver]: https://itunes.apple.com/hk/app/the-unarchiver/id425424353?mt=12
 [Keka]: https://itunes.apple.com/us/app/keka/id470158793?mt=12
 [iPack]: https://itunes.apple.com/us/app/ipack/id433386677?mt=12
+[Frank DeLoupe]: http://www.jumpzero.com/frank/
 
-[temp.im]: http://temp.im/
-[placehold.us]:http://placehold.us/
+[temp.im]: http://temp.im/ "Placehold image"
+[placehold.us]: http://placehold.us/
 
 [Firefox Add-ons collections]: https://addons.mozilla.org/en-US/firefox/collections/hzlzh/hzlzh/
 [ST2 资源技巧汇总]: http://www.douban.com/group/topic/28027863/
