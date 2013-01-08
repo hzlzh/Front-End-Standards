@@ -28,6 +28,9 @@
         * [jQuery Call](#jquery-call)
         * [jQuery Plugin](#jquery-plugin)
         * [JSON格式规范](#json格式规范)
+    * [Responsive Web 规范](#responsive-web-规范)
+        * [响应式实现途径](#响应式实现途径)
+        * [响应式解决方案](#响应式解决方案)
 * [Newletter制作规范](#newletter-制作规范)
     * [生产力工具推荐(Mac)](#生产力工具推荐mac)
     * [前端相关工具](#前端相关工具)
@@ -301,7 +304,7 @@ _如：以下2种顺序均可_
 ##### jQuery Plugin
 
 * IE对HTML5标签支持，以及浏览器特性检测：[Modernizr] & [html5shiv]
-* IE6 PNG 图片支持：[DD_belatedPNG]
+* <del>IE6 PNG 图片支持：[DD_belatedPNG]</del>
 * 定制&统一 浏览器的滚动条样式：[jquery-scroll] & [Lionbars]
 * hover提示效果文字：[bootstrap-tooltips] & [tipsy]
 * 滚动条跟随nav效果：[bootstrap-scrollspy]
@@ -329,6 +332,85 @@ _如：以下2种顺序均可_
 * 其他效果`js`及`统计代码` 文件置于 **尾部**
 * HTML 代码尽量过一遍[HTML5 验证]
 * HTML 占位图片使用 [temp.im] & [placehold.us] 图片服务
+
+### Responsive Web 规范
+从设计之处就坚持"[Mobile First]"的理念，在重构页面的时候要灵活采取响应式的解决方案。
+
+##### 响应式实现途径
+* 设置 [meta viewport] 属性
+    `<meta name="viewport" content="width=device-width, initial-scale=1" />`
+* 引入不同尺寸设备的样式表
+
+>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+    <link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" />
+    <!--[if (lt IE 9)&(!IEMobile)]>
+    <link rel="stylesheet" type="text/css" href="enhanced.css" />
+    <![endif]-->
+    
+* 使用 [CSS Media Queries] 方法
+
+>
+    @media screen and (max-width: 40.5em) {
+      .product-img {
+        width: auto;
+        float: none;
+      }
+    }
+    @media screen and (max-width: 480px) {
+    }
+    
+* JS控制导航栏在 [resize 事件] 触发后的可见性，如：
+
+>
+    $(w).resize(function(){ //Update dimensions on resize
+      sw = document.documentElement.clientWidth;
+      sh = document.documentElement.clientHeight;
+      checkMobile();
+    });
+    //Check if Mobile
+    function checkMobile() {
+      mobile = (sw > breakpoint) ? false : true;
+      if (!mobile) { //If Not Mobile
+        $('[role="tabpanel"],#nav,#search').show(); //Show full navigation and search
+      } else { //Hide 
+        if(!$('#nav-anchors a').hasClass('active')) {
+          $('#nav,#search').hide(); //Hide full navigation and search
+        }
+      }
+    }
+    
+##### 响应式解决方案
+* 弹性图片
+
+>
+    img {
+    	max-width: 100%;
+    	height: auto;
+    	width: auto\9; /* ie8 */
+    }
+
+* 自适应嵌入媒体
+
+>
+    .video embed, .video object, .video iframe {
+    	width: 100%;
+    	height: auto;
+    }
+
+* 禁用iPhone字体自适应功能：
+
+>
+    html {
+    	-webkit-text-size-adjust: none;
+    }
+
+* 让 IE 9 以下的IE版本支持响应式：
+
+>
+    <!--[if lt IE 9]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
 
 
 ### Newletter 制作规范
@@ -447,6 +529,9 @@ _如：以下2种顺序均可_
 [HTML 符号实体]: http://www.w3school.com.cn/html/html_entities.asp 
 [Google JSON Style Guide]:http://google-styleguide.googlecode.com/svn/trunk/jsoncstyleguide.xml
 [JSON Style Guide翻译]:https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md
+[meta viewport]: https://developer.mozilla.org/en-US/docs/Mobile/Viewport_meta_tag "<meta> ViewPort"
+[CSS Media Queries]: http://css-tricks.com/css-media-queries/
+[resize 事件]: http://api.jquery.com/resize/
 
 [Lesselements]: http://lesselements.com/
 [Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
@@ -482,6 +567,8 @@ _如：以下2种顺序均可_
 [测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]: https://github.com/GeekPark/Doc/wiki/%5B%E6%B5%8B%E8%AF%95%E6%8A%80%E5%B7%A7%5DGmail-%E6%B7%BB%E5%8A%A0%E8%AF%8D%E7%BC%80(.--)%E8%8E%B7%E5%BE%97%E5%A4%9A%E4%B8%AA%E9%82%AE%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95
 [关于Mac Win Linux跨系统传文件，文件名乱码的解决方案]: https://github.com/GeekPark/Doc/wiki/%E5%85%B3%E4%BA%8E%5BMac%5D-%5BWin%5D-%5BLinux%5D%E8%B7%A8%E7%B3%BB%E7%BB%9F%E4%BC%A0%E6%96%87%E4%BB%B6%EF%BC%8C%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88
 [技术团队"路由代理"解决方案和使用须知]: https://github.com/GeekPark/Doc/wiki/%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F%5B%E8%B7%AF%E7%94%B1%E4%BB%A3%E7%90%86%5D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%92%8C%E4%BD%BF%E7%94%A8%E9%A1%BB%E7%9F%A5
+[Mobile First]: http://www.lukew.com/ff/entry.asp?933 "Mobile First"
+
 
 [Sublime Text 2]:http://www.sublimetext.com/2
 [TextMate 2]:https://github.com/textmate/textmate
