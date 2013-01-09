@@ -510,7 +510,7 @@ _如：以下2种顺序均可_
 | 320x480       |      10.05% |
 | 1024x768      |       5.93% |   
 
-此规范基于 [MIT License] 开源，持续更新维护中，欢迎 `Star` 或 `Fork` 本项并目通过 `Pull Request` 贡献规范。
+此规范基于 [MIT License] 开源，持续更新维护中，欢迎 `Star` 或 `Fork` 本项并目通过 `Pull Request` 贡献规范，请在这里反馈 [创建[issues]](https://github.com/hzlzh/GeekPark-FrontEnd-Standard/issues/new)
 
 [GeekPark]: http://geekpark.net/ "http://geekpark.net/"
 [ITvalue]: http://www.itvalue.com.cn/ "http://www.itvalue.com.cn/"
