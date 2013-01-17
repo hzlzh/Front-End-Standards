@@ -1,0 +1,53 @@
+!!! 5
+%html{'lang' => 'en-US', 'dir' => 'ltr'}
+  %head
+    %meta{'charset' => 'UTF-8'}/
+    %meta{:name => "viewport", :content  => "width=device-width"}
+    %title 前端规范 | Front-End-Standards.com
+    %meta{:name => "keywords", :content  => "前端, 规范"}
+    %meta{:name => "description", :content  => "前端规范 | Front-End-Standards.com"}
+    %meta{:name => "robots", :content  => "noindex,nofollow"}
+    %meta{:name => "apple-mobile-web-app-capable", :content  => "no"}
+    %link{:rel => "apple-touch-icon", :size => "57x57", :href  => "/apple-touch-icon-57x57.png"}
+    %link{:rel => "apple-touch-icon", :size => "72x72", :href  => "/apple-touch-icon-72x72.png"}
+    %link{:rel => "apple-touch-icon", :size => "114x114", :href  => "/apple-touch-icon-114x114.png"}
+    %link{:rel => "stylesheet", :href  => "css/style.css"}
+    %link{:rel => "alternate", :typr => "application/rss+xml", :title => "RSS Feed", :href  => "#"}
+    %script{:src  => "js/libs/modernizr.js"}
+    %script{:src  => "----http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"}
+    :javascript
+      !window.jQuery && document.write('<script src="js/jquery.min.js"><\/script>')
+    :javascript
+      // here the pre-load JS starts.
+      
+      // Google analytics code
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-00000000-0']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  %body
+    %header
+      %h1 Front End Standards
+      %span.description 前端规范
+    .container
+      %nav 
+        %ul 
+          %li 
+            %a{:href => "#"} 规范222ss梗概
+          %li 
+            %a.current{:href => "#"} 规范说明
+          %li 
+            %a{:href => "#"} 规范说明
+      %article 
+        .content-box
+          .content
+            
+    %footer
+      footer
+    :javascript
+      // here the post-load JS starts.

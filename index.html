@@ -1,706 +1,516 @@
 <!DOCTYPE html>
-<html>
-
+<html dir="ltr" lang="en-US">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Geekpark-frontend-standard : HTML &amp; CSS &amp; JS Standard" />
+    <meta charset="UTF-8">
+    <meta content="width=device-width" name="viewport">
+    <title>前端规范 | Front-End-Standards.com</title>
+    <meta content="前端, 规范" name="keywords">
+    <meta content="前端规范 | Front-End-Standards.com" name="description">
+    <meta content="noindex,nofollow" name="robots">
+    <meta content="no" name="apple-mobile-web-app-capable">
+    <link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" size="57x57">
+    <link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" size="72x72">
+    <link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" size="114x114">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="#" rel="alternate" title="RSS Feed" typr="application/rss+xml">
+    <script src="js/libs/modernizr.js"></script>
+    <script type="text/javascript" src="js/libs/showdown.js"></script>
+    <script type="text/javascript" src="js/libs/showdown-gui.js"></script>
+    <script src="----http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+      //<![CDATA[
+        !window.jQuery && document.write('<script src="js/jquery.min.js"><\/script>')
+      //]]>
+    </script>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Geekpark-frontend-standard</title>
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/hzlzh/GeekPark-FrontEnd-Standard">View on GitHub</a>
-
-          <h1 id="project_title">Geekpark-frontend-standard</h1>
-          <h2 id="project_tagline">HTML &amp; CSS &amp; JS Standard</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/hzlzh/GeekPark-FrontEnd-Standard/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/hzlzh/GeekPark-FrontEnd-Standard/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>GeekPark 前端代码规范 v1.1</h1>
-
-
-<p><a href="http://geekpark.net/" title="http://geekpark.net/">GeekPark</a> &amp; <a href="http://www.businessvalue.com.cn/" title="http://www.businessvalue.com.cn/">BusinessValue</a> &amp; <a href="http://www.itvalue.com.cn/" title="http://www.itvalue.com.cn/">ITvalue</a> 前端开发团队遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。</p>
-
-<h2>索引</h2>
-
-<ul>
-<li>
-<a href="#%E8%A7%84%E8%8C%83%E6%A2%97%E6%A6%82">规范梗概</a>
-
-<ul>
-<li><a href="#%E8%A7%84%E8%8C%83%E8%AF%B4%E6%98%8E">规范说明</a></li>
-<li><a href="#%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E">结构说明</a></li>
-</ul>
-</li>
-<li>
-<a href="#%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83">书写规范</a>
-
-<ul>
-<li>
-<a href="#%E6%A0%B7%E5%BC%8F%E4%B8%8E%E5%86%85%E5%AE%B9%E5%88%86%E7%A6%BB">样式与内容分离</a>
-
-<ul>
-<li><a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84">项目结构</a></li>
-<li><a href="#%E9%87%8D%E6%9E%84%E6%AD%A5%E9%AA%A4%E7%BA%A6%E5%AE%9A">重构步骤约定</a></li>
-<li><a href="#%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83">命名规范</a></li>
-<li><a href="#%E6%A0%BC%E5%BC%8F%E7%BC%96%E7%A0%81">格式&amp;编码</a></li>
-</ul>
-</li>
-<li>
-<a href="#css-%E7%BB%86%E5%8C%96%E8%A7%84%E8%8C%83">CSS 细化规范</a>
-
-<ul>
-<li><a href="#css%E5%90%ABless%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84">CSS(含Less)文件结构</a></li>
-<li><a href="#css%E5%90%84%E5%B1%9E%E6%80%A7%E7%9A%84%E6%8E%92%E5%88%97%E9%A1%BA%E5%BA%8F%EF%BC%9A%E4%B8%8D%E5%81%9A%E7%A1%AC%E6%80%A7%E8%A6%81%E6%B1%82">CSS各属性</a></li>
-<li><a href="#css%E5%B5%8C%E5%A5%97%E8%A7%84%E5%88%99">CSS嵌套规则</a></li>
-<li><a href="#css%E6%A0%BC%E5%BC%8F%E5%8C%96">CSS格式化</a></li>
-</ul>
-</li>
-<li>
-<a href="#xhtml-%E7%BB%86%E5%8C%96%E8%A7%84%E8%8C%83">XHTML 细化规范</a>
-
-<ul>
-<li><a href="#html-%E6%B3%A8%E9%87%8A%E6%A0%BC%E5%BC%8F%E7%BA%A6%E5%AE%9A">HTML 注释格式</a></li>
-<li><a href="#html%E5%B5%8C%E5%A5%97%E8%A7%84%E5%88%99">HTML嵌套规则</a></li>
-</ul>
-</li>
-<li>
-<a href="#js-%E7%BB%86%E5%8C%96%E8%A7%84%E8%8C%83">JS 细化规范</a>
-
-<ul>
-<li><a href="#js-%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84">JS 文件结构</a></li>
-<li><a href="#jquery-call">jQuery Call</a></li>
-<li><a href="#jquery-plugin">jQuery Plugin</a></li>
-<li><a href="#json%E6%A0%BC%E5%BC%8F%E8%A7%84%E8%8C%83">JSON格式规范</a></li>
-</ul>
-</li>
-<li>
-<a href="#responsive-web-%E8%A7%84%E8%8C%83">Responsive Web 规范</a>
-
-<ul>
-<li><a href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E5%AE%9E%E7%8E%B0%E9%80%94%E5%BE%84">响应式实现途径</a></li>
-<li><a href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">响应式解决方案</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="#newletter-%E5%88%B6%E4%BD%9C%E8%A7%84%E8%8C%83">Newletter制作规范</a>
-
-<ul>
-<li><a href="#%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90mac">生产力工具推荐(Mac)</a></li>
-<li><a href="#%E5%89%8D%E7%AB%AF%E7%9B%B8%E5%85%B3%E5%B7%A5%E5%85%B7">前端相关工具</a></li>
-<li><a href="#%E5%85%B6%E4%BB%96%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7">其他效率工具</a></li>
-<li><a href="#%E5%85%B6%E4%BB%96%E6%94%B6%E9%9B%86">其他收集</a></li>
-</ul>
-</li>
-<li><a href="#%E7%9B%B8%E5%85%B3%E6%8A%80%E5%B7%A7">相关技巧</a></li>
-<li><a href="#%E5%8F%82%E8%80%83%E6%95%B0%E6%8D%AE">参考数据</a></li>
-</ul><h2>规范梗概</h2>
-
-<hr><h5>规范说明</h5>
-
-<p>此规范为参考规范，不全是硬性要求，部分硬性约定见下一条<a href="#%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83">书写规范</a>，统一团队编码规范和风格。让所有代码都是有规可循的，并且能够得到沉淀，减少重复劳动。</p>
-
-<h5>结构说明</h5>
-
-<p>-- <a href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84">项目结构</a><br>
-----|---- <a href="#css-%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84">CSS文件结构</a><br>
-----|---- <a href="#js-%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84">JS文件结构</a>  </p>
-
-<h2>书写规范</h2>
-
-<hr><h3>样式与内容分离</h3>
-
-<h4>项目结构</h4>
-
-<blockquote>
-<pre><code>--- 
- |---- index.html             入口页    
- |---- js/                    JS //具体见JS细化结构                 
- |---- css/                   CSS //具体见CSS细化结构
-</code></pre>
-</blockquote>
-
-<h4>重构步骤约定</h4>
-
-<ol>
-<li>
-<code>index.html</code> 全部样式附着于 <code>class="xxx"</code> <strong>注：</strong> <em>此时文件中不包含任何一个 id="xxx"</em>
-</li>
-<li>为上一步书写 CSS style<br><strong>[至此重构完成]</strong>
-</li>
-<li>开始书写<code>js</code>交互文件，使用 <code>ID</code> 和 <code>Class</code> 定位被操作句柄</li>
-<li>向 <code>index.html</code> 中需要的地方添加 <code>id="xxx"</code> 及 <code>data-xxx="xxx"</code><br><strong>[至此交互效果完成]</strong>
-</li>
-</ol><h4>命名规范</h4>
-
-<ul>
-<li>文件及文件夹: 全部英文小写字母+数字或连接符"<code>-</code> , <code>_</code> "，不可出现其他字符
-如：<code>../css/style.css, jquery.1.x.x.js</code> </li>
-<li>文件：调用 <code>/libs</code> 文件需包含版本号，压缩文件需包含<code>min</code>关键词，其他插件则可不包含
-如：<code>/libs/jquery.1.9.1.js</code> <code>/libs/modernizr-1.7.min.js</code> <code>fileuploader.js</code> <code>plugins.js</code>
-</li>
-<li>ID: <a href="http://zh.wikipedia.org/wiki/%E5%8C%88%E7%89%99%E5%88%A9%E5%91%BD%E5%90%8D%E6%B3%95" title="Wiki:匈牙利命名法">匈牙利命名法</a> &amp; <a href="http://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB" title="小駝峰式命名法">小駝峰式命名法</a><br>
-如：<code>firstName</code> <code>topBoxList</code> <code>footerCopyright</code>
-</li>
-<li>Class: [减号连接符]<br>
-如：<code>top-item</code> <code>main-box</code> <code>box-list-item-1</code>
-</li>
-<li>尽量使用语义明确的单词命名，避免 <code>left</code> <code>bottom</code> 等方位性的词语</li>
-</ul><h4>格式&amp;编码</h4>
-
-<ul>
-<li>文本文件： <code>.xxx</code> UTF-8_(无BOM)_ 编码</li>
-<li>图片文件： <code>.png</code> <em>(PNG-24)</em> <code>.jpg</code> <em>(压缩率8-12)</em>
-</li>
-<li>动态图片： <code>.gif</code>
-</li>
-<li>压缩文件： <code>.tar.gz</code> <code>.zip</code>
-</li>
-</ul><h3>CSS 细化规范</h3>
-
-<h4>CSS 文件结构</h4>
-
-<blockquote>
-<pre><code>--- ../css/
- |---- css/libs/reset.css                  CSS reset文件
- |---- … … 
- |---- css/images/                         主 CSS-sprite 图片     
- |---- css/style.css                       主 CSS 样式表
- |---- … … 
- |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
- |---- css/xxx-style.css                   xxx 的 样式表
-</code></pre>
-</blockquote>
-
-<h4>CSS(含Less) 文件结构</h4>
-
-<blockquote>
-<pre><code>--- ../css/
- |---- css/libs/reset.less            CSS reset文件
- |---- css/libs/elements.less         Less 函数复用文件
- |---- … … 
- |---- css/images/                         主 CSS-sprite 图片     
- |---- css/style.less                      主样式Less
- |---- css/style.css                       less -&gt; css 自动生成
- |---- … … 
- |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
- |---- css/xxx-style.less                  xxx 的 Less
- |---- css/xxx-style.css                   less -&gt; css 自动生成
-</code></pre>
-</blockquote>
-
-<h4>使用Less</h4>
-
-<p>在 <code>.less</code>文件头部引入 <a href="https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.less" title="reset.less from HTML5 Boilerplate">reset.less</a>&amp;<a href="https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/elements.less" title="elements.less from lesselements">elements.less</a>，之后调用如下属性传参即可，具体使用说明见-&gt;<a href="http://lesselements.com/">Lesselements</a>官方文档   </p>
-
-<pre><code>@import "libs/reset.less";  
-@import "libs/elements.less";
-</code></pre>
-
-<blockquote>
-<pre><code>.gradient
-.bw-gradient
-.bordered
-.drop-shadow
-.rounded
-.border-radius
-.opacity
-.transition-duration
-.rotation
-.scale
-.transition
-.inner-shadow
-.box-shadow
-.columns
-.translate
-</code></pre>
-</blockquote>
-
-<h4>CSS reset</h4>
-
-<p>CSS reset 文件使用：<a href="https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.css" title="CSS reset 文件">reset.css</a> 或 <a href="https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.less" title="reset.less from HTML5 Boilerplate">reset.less</a>   </p>
-
-<ul>
-<li>reset文件用于重设各个浏览器的默认样式方案，解决其引起的耦合问题。<br>
-</li>
-<li>也可使用 <code>.clearfix</code> 清除浮动</li>
-</ul><h4>CSS 注释格式约定</h4>
-
-<blockquote>
-<pre><code>/*
-@name: Drop Down Menu
-@description: Style of top bar drop down menu.
-@require: reset.css
-@author: Andy Huang(andyahung@geekpark.net)
-*/
-</code></pre>
-</blockquote>
-
-<p><em>其中，@require为可选项</em> </p>
-
-<ul>
-<li>CSS换行制表：使用 2 <del>或4</del> 个空格，而非[Tab]</li>
-<li>书写格式：
-
-<ul>
-<li>CSS名称+冒号+属性<br>
-如：<code>.box1 {float:left;}</code>
-</li>
-<li>建议保留<code>{</code>左侧空格，字体名用<code>\</code>包含<br>
-如：<code>.box1,.box2,.box3 {font-family:Courier,'Courier New';}</code>
-</li>
-<li>避免中文，或使用转义，推荐前者<br>
-如：<code>font-family: "Microsoft YaHei";</code> <code>font-family:\5fae\8f6f\96c5\9ed1;</code>
-</li>
-</ul>
-</li>
-</ul><h4>CSS各属性的排列顺序：不做硬性要求</h4>
-
-<p><em>如：以下2种顺序均可</em></p>
-
-<pre><code>.box {
-  /* 顺序1 */
-  background: none repeat scroll 0 0 transparent;
-  bottom: 11px;
-  position: relative;
-  width: 22px;
-  z-index: 33;
-}
-.box {
-  /* 顺序2 */
-  z-index: 33;
-  width: 22px;
-  bottom: 11px;
-  background: transparent none repeat scroll 0 0 ;
-  position: relative;
-}
-</code></pre>
-
-<h4>CSS嵌套规则</h4>
-
-<pre><code>/* 推荐嵌套层级 */
-.ui-icon-rarr{}
-.ui-icon-larr{}
-.ui-title{}
-.ui-nav .ui-list{}
-.ui-table .ui-list{}
-
-/* 不推荐 */
-.ui-icon-rarr{}
-.ui-icon-larr{}
-.ui-title{}
-.ui-list{}
-.ui-nav{}
-</code></pre>
-
-<h4>CSS格式化</h4>
-
-<p>勿格式化，保留下面这种格式，增加可读性和可维护性，后期后台程序(如：PHP/Python)会将CSS压缩成 <strong>一行</strong> 输出：</p>
-
-<pre><code>.box{
-  /* 勿格式化，增加可读性 */
-  background: none repeat scroll 0 0 transparent;
-  bottom: 11px;
-  position: relative;
-  width: 22px;
-  z-index: 33;
-}
-</code></pre>
-
-<h3>XHTML 细化规范</h3>
-
-<h4>HTML 注释格式约定</h4>
-
-<pre><code>&lt;!--
-@name: Drop Down Menu
-@description: Style of top bar drop down menu.
-@author: Andy Huang(andyahung@geekpark.net)
---&gt;
-
-&lt;div id="header"&gt;
-    &lt;div class="xxx"&gt;
-        &lt;span&gt;HTML行内注释格式&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;&lt;!-- #header end--&gt;
-</code></pre>
-
-<ul>
-<li>HTML换行缩进：**采用 2 空格**</li>
-</ul><h4>HTML嵌套规则</h4>
-
-<pre><code>/* 推荐嵌套层级 */
-  &lt;ul class="ui-nav"&gt;
-    &lt;li class="ui-nav-item"&gt; some text
-      &lt;ul class="ui-nav-item-child"&gt;
-        &lt;li&gt; some text
-          &lt;ul class="ui-list"&gt;
-            &lt;li class="ui-list-item"&gt; some text&lt;/li&gt;
-          &lt;/ul
-        ...
-       &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li
-    ...
-  &lt;/ul&gt;
-</code></pre>
-
-<h5>* 第一行统一使用HTML5标准：&lt;!DOCTYPE html&gt;</h5>
-
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html dir="ltr" lang="zh-CN"&gt;
-&lt;head&gt;
-    &lt;meta charset="utf-8" /&gt;
-    &lt;title&gt;极客公园 | 创新者社区&lt;/title&gt;
-    &lt;meta name="keywords" content="xxxx, xxx, xxxxx" /&gt;
-    &lt;meta name="description" content="xxxxxxxxxxxxxxxxxxxx" /&gt;
-</code></pre>
-
-<h5>Meta 的使用：（需要根据具体需求按需选择）可参看：<a href="https://github.com/hzlzh/cool-head">cool-head</a>
-</h5>
-
-<pre><code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
-&lt;meta http-equiv="Cache-Control" content="max-age=7200" /&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.geekpark.net/" /&gt;
-&lt;link rel="shortcut icon" href="favicon.ico"&gt;
-&lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&gt;
-
-&lt;script type="text/javascript" src="/js/xxx.js"&gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="/css/xxx.css"&gt;
-
-&lt;script type="text/javascript"&gt;
-    Google 统计代码 的位置在离&lt;/head&gt;最近的位置
-&lt;/script&gt;
-&lt;/head&gt;
-</code></pre>
-
-<ul>
-<li>
-<code>&lt;img&gt;</code>标签默认缺省格式：<code>&lt;img src="xxx.png" alt="缺省时文字" /&gt;</code> 避免出现<a href="http://js8.in/555.html" title='src="" 问题'>src="" 问题</a>
-</li>
-<li>
-<code>&lt;a&gt;</code>标签缺省格式：<code>&lt;a href="###" title="链接名称"&gt;xxx&lt;/&gt;</code> 注：<code>target="_blank"</code> 根据需求决定<br>
-</li>
-<li>
-<a>标签预留链接占位符使用<code>###</code>，参见：</a><a href="http://www.v2ex.com/t/48511/" title="a标签占位符问题">a标签占位符问题</a>
-</li>
-<li>所有标签需要符合XHTML标准闭合</li>
-<li>一律统一标签结尾斜杠的书写形式：<code>&lt;br /&gt;</code> <code>&lt;hr /&gt;</code> 注意之间空格</li>
-<li>避免使用已过时标签，如：<code>&lt;b&gt;</code> <code>&lt;u&gt;</code> <code>&lt;i&gt;</code> 而用 <code>&lt;strong&gt;</code> <code>&lt;em&gt;</code>等代替</li>
-<li>使用<code>data-xxx</code>来添加自定义数据，如：<code>&lt;input data-xxx="yyy"/&gt;</code>
-</li>
-<li>避免使用<code>style="xxx:xxx;"</code>的内联样式表</li>
-<li>特殊符号使用参考<a href="http://www.w3school.com.cn/html/html_entities.asp">HTML 符号实体</a>
-</li>
-</ul><h3>JS 细化规范</h3>
-
-<hr><h5>JS 文件结构</h5>
-
-<blockquote>
-<pre><code>---/js/
-|---- /libs/plugin-1/       使用到的js插件1  
-|---- /libs/plugin-2/       使用到的js插件2  
-|---- /libs/plugin-3/       使用到的js插件3  
-|---- script.js             单独书写的js  
-|---- plugins.js            调用的plugins汇总  
-|---- juqery-1.9.x.min.js   调用jq库文件  
-</code></pre>
-</blockquote>
-
-<ul>
-<li>JS 换行缩进：采用 4 空格</li>
-<li>结束行需添加分号<code>;</code>
-</li>
-<li>jQuery变量要求首字符为 <code>$</code>, 私有变量:首字符为<code>_</code>; 尽量避免全局变量.</li>
-<li>避免使用 eval()，setTimeOut使用调用函数，考虑重绘，回流 操作对页面影响  参看：<a href="http://www.zhangxinxu.com/wordpress/2010/01/%E5%9B%9E%E6%B5%81%E4%B8%8E%E9%87%8D%E7%BB%98%EF%BC%9Acss%E6%80%A7%E8%83%BD%E8%AE%A9javascript%E5%8F%98%E6%85%A2%EF%BC%9F/" title="重绘,回流参考">reflows，repaints</a>
-</li>
-<li>JS调试使用<code>console.log()</code>及<code>console.dir()</code>进行，避免使用弹出框，线上版需要注释所有调试代码</li>
-<li>JS压缩混淆工具: <a href="http://javascriptcompressor.com/" title="JS 压缩和混淆">JS Compressor</a>  如果使用了压缩，需要留 <code>name-src.js</code>在同路径供今后修改使用</li>
-</ul><h5>jQuery Call</h5>
-
-<pre><code>&lt;!-- Grab Google CDN jQuery. fall back to local if necessary --&gt;  
-&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;&lt;/script&gt;  
-&lt;script&gt;!window.jQuery &amp;&amp; document.write('&lt;script src="js/jquery-1.7.2.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;            
-</code></pre>
-
-<h5>jQuery Plugin</h5>
-
-<ul>
-<li>IE对HTML5标签支持，以及浏览器特性检测：<a href="http://modernizr.com/download/">Modernizr</a> &amp; <a href="https://github.com/aFarkas/html5shiv">html5shiv</a>
-</li>
-<li><del>IE6 PNG 图片支持：<a href="http://www.dillerdesign.com/experiment/DD_belatedPNG/">DD_belatedPNG</a></del></li>
-<li>定制&amp;统一 浏览器的滚动条样式：<a href="https://github.com/thomd/jquery-scroll/">jquery-scroll</a> &amp; <a href="https://github.com/Charuru/lionbars">Lionbars</a>
-</li>
-<li>hover提示效果文字：<a href="http://twitter.github.com/bootstrap/javascript.html#tooltips">bootstrap-tooltips</a> &amp; <a href="https://github.com/jaz303/tipsy">tipsy</a>
-</li>
-<li>滚动条跟随nav效果：<a href="http://twitter.github.com/bootstrap/javascript.html#scrollspy">bootstrap-scrollspy</a>
-</li>
-<li>提示冒泡文字：<a href="https://github.com/jamescryer/grumble.js">grumble.js</a>
-</li>
-<li>导航栏过渡效果：<a href="http://www.gmarwaha.com/blog/2007/08/23/lavalamp-for-jquery-lovers/">lavalamp</a>
-</li>
-<li>移动设备的滚动效果：<a href="https://github.com/cubiq/iscroll">iscroll 4</a>
-</li>
-<li>Mac OS Lion 风格的滚动条：<a href="https://github.com/Charuru/lionbars">Lionbars</a>
-</li>
-<li>弹性SlideShow：<a href="https://github.com/Mottie/Kwicks">kwicks for jQuery</a>
-</li>
-<li>瀑布流：<a href="https://github.com/desandro/isotope">isotope</a>
-</li>
-<li>抖动效果：<a href="https://gist.github.com/3270711">jQ shake</a>
-</li>
-<li>LightBox：<a href="https://github.com/fancyapps/fancyBox">fancyBox</a>
-</li>
-<li>KenDo UI：<a href="http://www.kendoui.com/purchase.aspx">KenDo UI</a>
-</li>
-<li>textarea自适应高度：<a href="http://unwrongest.com/projects/elastic/">elastic</a>
-</li>
-<li>提示区域 &amp; 提示层：<a href="https://github.com/needim/noty">noty</a>
-</li>
-<li>浮动话题泡：<a href="https://github.com/jamescryer/grumble.js">jQuery grumble</a>
-</li>
-<li>旋转进度：<a href="https://github.com/aterrien/jQuery-Knob">jQuery Knob</a>
-</li>
-</ul><h5>JSON格式规范</h5>
-
-<p>参考<a href="https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md">JSON Style Guide翻译</a>，原版：<a href="http://google-styleguide.googlecode.com/svn/trunk/jsoncstyleguide.xml">Google JSON Style Guide</a></p>
-
-<h3>HTML 细化规范</h3>
-
-<ul>
-<li>HTML <code>head</code>部分的结构参看：<a href="https://github.com/hzlzh/cool-head">cool-head</a> (摘取必要内容即可)</li>
-<li>
-<code>css</code> 文件置于都 <strong>头部</strong>
-</li>
-<li>
-<code>jQuery</code> 及 <code>Google Analytics</code>引用置于 <strong>头部</strong>
-</li>
-<li>其他效果<code>js</code>及<code>统计代码</code> 文件置于 <strong>尾部</strong>
-</li>
-<li>HTML 代码尽量过一遍<a href="http://html5.validator.nu/">HTML5 验证</a>
-</li>
-<li>HTML 占位图片使用 <a href="http://temp.im/" title="Placehold image">temp.im</a> &amp; <a href="http://placehold.us/">placehold.us</a> 图片服务</li>
-</ul><h3>Responsive Web 规范</h3>
-
-<p>从设计之处就坚持"<a href="http://www.lukew.com/ff/entry.asp?933" title="Mobile First">Mobile First</a>"的理念，在重构页面的时候要灵活采取响应式的解决方案。</p>
-
-<h5>响应式实现途径</h5>
-
-<ul>
-<li>设置 <a href="https://developer.mozilla.org/en-US/docs/Mobile/Viewport_meta_tag" title="&lt;meta&gt; ViewPort">meta viewport</a> 属性
-<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</code>
-</li>
-<li>引入不同尺寸设备的样式表</li>
-</ul><blockquote>
-<pre><code>&lt;link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" /&gt;
-&lt;link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" /&gt;
-&lt;!--[if (lt IE 9)&amp;(!IEMobile)]&gt;
-&lt;link rel="stylesheet" type="text/css" href="enhanced.css" /&gt;
-&lt;![endif]--&gt;
-</code></pre>
-</blockquote>
-
-<ul>
-<li>使用 <a href="http://css-tricks.com/css-media-queries/">CSS Media Queries</a> 方法</li>
-</ul><blockquote>
-<pre><code>@media screen and (max-width: 40.5em) {
-  .product-img {
-    width: auto;
-    float: none;
-  }
-}
-@media screen and (max-width: 480px) {
-}
-</code></pre>
-</blockquote>
-
-<ul>
-<li>JS控制导航栏在 <a href="http://api.jquery.com/resize/">resize 事件</a> 触发后的可见性，如：</li>
-</ul><blockquote>
-<pre><code>$(w).resize(function(){ //Update dimensions on resize
-  sw = document.documentElement.clientWidth;
-  sh = document.documentElement.clientHeight;
-  checkMobile();
-});
-//Check if Mobile
-function checkMobile() {
-  mobile = (sw &gt; breakpoint) ? false : true;
-  if (!mobile) { //If Not Mobile
-    $('[role="tabpanel"],#nav,#search').show(); //Show full navigation and search
-  } else { //Hide 
-    if(!$('#nav-anchors a').hasClass('active')) {
-      $('#nav,#search').hide(); //Hide full navigation and search
+    <header>
+      <h1>Front End Standards</h1>
+      <span class="description">前端规范</span>
+    </header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">规范梗概</a>
+          </li>
+          <li>
+            <a class="current" href="#">CSS 规范</a>
+          </li>
+          <li>
+            <a href="#">XHTML 规范</a>
+          </li>
+          <li>
+            <a href="#">JS 规范</a>
+          </li>
+          <li>
+            <a href="#">响应式 Web 规范</a>
+          </li>
+          <li>
+            <a href="#">Newletter规范</a>
+          </li>
+          <li>
+            <a href="#">资源汇总</a>
+          </li>
+          <li>
+            <a href="#">参考数据</a>
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <div class="content-box">
+          <div class="content">
+                  <select id="paneSetting">
+        <option value="previewPane">Preview</option>
+        <option value="syntaxPane">MarkDown</option>
+        <option value="outputPane">HTML Output</option>
+      </select>
+
+  
+    <textarea style="display:none;" id="outputPane" class="pane" readonly="readonly" rows="25" cols="100"></textarea>
+  
+    <div id="previewPane" class="pane markdown-body"><noscript><h2>You'll need to enable Javascript to use this tool.</h2></noscript></div>
+  
+
+<textarea style="display:none;" id="syntaxPane" class="pane" cols="80" rows="20" >
+## 1. 规范说明  
+此规范为参考规范，不全是硬性要求，部分硬性约定见下一条[书写规范](#书写规范)，统一团队编码规范和风格。让所有代码都是有规可循的，并且能够得到沉淀，减少重复劳动。
+
+### 1.1 结构说明  
+-- [项目结构](#项目结构)  
+----|---- [CSS文件结构](#css-文件结构)  
+----|---- [JS文件结构](#js-文件结构)  
+
+## 2. 书写规范
+
+### 2.1 样式与内容分离
+
+#### 2.1.1 项目结构  
+    --- 
+     |---- index.html             入口页    
+     |---- js/                    JS //具体见JS细化结构                 
+     |---- css/                   CSS //具体见CSS细化结构
+
+#### 2.1.2 重构步骤约定
+1. `index.html` 全部样式附着于 `class="xxx"` **注：** _此时文件中不包含任何一个 id="xxx"_
+2. 为上一步书写 CSS style  
+**\[至此重构完成\]**
+3. 开始书写`js`交互文件，使用 `ID` 和 `Class` 定位被操作句柄
+4. 向 `index.html` 中需要的地方添加 `id="xxx"` 及 `data-xxx="xxx"`  
+**\[至此交互效果完成\]**
+
+#### 2.1.3 命名规范  
+* 文件及文件夹: 全部英文小写字母+数字或连接符"`-` , `_` "，不可出现其他字符
+如：`../css/style.css, jquery.1.x.x.js` 
+* 文件：调用 `/libs` 文件需包含版本号，压缩文件需包含`min`关键词，其他插件则可不包含
+如：`/libs/jquery.1.9.1.js` `/libs/modernizr-1.7.min.js` `fileuploader.js` `plugins.js`
+* ID: [匈牙利命名法] & [小駝峰式命名法]  
+如：`firstName` `topBoxList` `footerCopyright`
+* Class: [减号连接符]  
+如：`top-item` `main-box` `box-list-item-1`
+* 尽量使用语义明确的单词命名，避免 `left` `bottom` 等方位性的词语
+
+#### 2.1.4 格式&编码
+* 文本文件： `.xxx` UTF-8_\(无BOM\)_ 编码
+* 图片文件： `.png` _(PNG-24)_ `.jpg` _(压缩率8-12)_
+* 动态图片： `.gif`
+* 压缩文件： `.tar.gz` `.zip`
+
+### 2.2 CSS 细化规范
+
+#### 2.2.1 CSS 文件结构 
+    --- ../css/
+     |---- css/libs/reset.css                  CSS reset文件
+     |---- … … 
+     |---- css/images/                         主 CSS-sprite 图片     
+     |---- css/style.css                       主 CSS 样式表
+     |---- … … 
+     |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
+     |---- css/xxx-style.css                   xxx 的 样式表
+     
+#### 2.2.2 CSS(含Less) 文件结构  
+    --- ../css/
+     |---- css/libs/reset.less            CSS reset文件
+     |---- css/libs/elements.less         Less 函数复用文件
+     |---- … … 
+     |---- css/images/                         主 CSS-sprite 图片     
+     |---- css/style.less                      主样式Less
+     |---- css/style.css                       less -> css 自动生成
+     |---- … … 
+     |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
+     |---- css/xxx-style.less                  xxx 的 Less
+     |---- css/xxx-style.css                   less -> css 自动生成
+
+#### 2.2.3 使用Less
+在 `.less`文件头部引入 [reset.less]&[elements.less]，之后调用如下属性传参即可，具体使用说明见->[Lesselements]官方文档   
+
+    @import "libs/reset.less";  
+    @import "libs/elements.less";
+
+    .gradient
+    .bw-gradient
+    .bordered
+    .drop-shadow
+    .rounded
+    .border-radius
+    .opacity
+    .transition-duration
+    .rotation
+    .scale
+    .transition
+    .inner-shadow
+    .box-shadow
+    .columns
+    .translate
+
+#### 2.2.4 CSS reset
+CSS reset 文件使用：[reset.css] 或 [reset.less]   
+
+* reset文件用于重设各个浏览器的默认样式方案，解决其引起的耦合问题。  
+* 也可使用 `.clearfix` 清除浮动
+
+#### 2.2.5 CSS 注释格式约定  
+    /*
+    @name: Drop Down Menu
+    @description: Style of top bar drop down menu.
+    @require: reset.css
+    @author: Andy Huang(andyahung@geekpark.net)
+    */
+
+_其中，@require为可选项_ 
+
+* CSS换行制表：使用 2 <del>或4</del> 个空格，而非\[Tab\]
+* 书写格式：
+    * CSS名称+冒号+属性  
+    如：`.box1 {float:left;}`
+    * 建议保留`{`左侧空格，字体名用`\`包含  
+    如：`.box1,.box2,.box3 {font-family:Courier,'Courier New';}`
+    * 避免中文，或使用转义，推荐前者  
+    如：`font-family: "Microsoft YaHei";` `font-family:\5fae\8f6f\96c5\9ed1;`
+        
+#### 2.2.6 CSS各属性的排列顺序：不做硬性要求  
+_如：以下2种顺序均可_
+
+    .box {
+      /* 顺序1 */
+      background: none repeat scroll 0 0 transparent;
+      bottom: 11px;
+      position: relative;
+      width: 22px;
+      z-index: 33;
     }
-  }
-}
-</code></pre>
-</blockquote>
+    .box {
+      /* 顺序2 */
+      z-index: 33;
+      width: 22px;
+      bottom: 11px;
+      background: transparent none repeat scroll 0 0 ;
+      position: relative;
+    }
+  
+#### 2.2.7 CSS嵌套规则    
+    /* 推荐嵌套层级 */
+    .ui-icon-rarr{}
+    .ui-icon-larr{}
+    .ui-title{}
+    .ui-nav .ui-list{}
+    .ui-table .ui-list{}
 
-<h5>响应式解决方案</h5>
+    /* 不推荐 */
+    .ui-icon-rarr{}
+    .ui-icon-larr{}
+    .ui-title{}
+    .ui-list{}
+    .ui-nav{}
 
-<ul>
-<li>弹性图片</li>
-</ul><blockquote>
-<pre><code>img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-}
-</code></pre>
-</blockquote>
+#### 2.2.8 CSS格式化  
+勿格式化，保留下面这种格式，增加可读性和可维护性，后期后台程序(如：PHP/Python)会将CSS压缩成 **一行** 输出：
 
-<ul>
-<li>自适应嵌入媒体</li>
-</ul><blockquote>
-<pre><code>.video embed, .video object, .video iframe {
-    width: 100%;
-    height: auto;
-}
-</code></pre>
-</blockquote>
+    .box{
+      /* 勿格式化，增加可读性 */
+      background: none repeat scroll 0 0 transparent;
+      bottom: 11px;
+      position: relative;
+      width: 22px;
+      z-index: 33;
+    }
+    
+### 2.3 XHTML 细化规范
 
-<ul>
-<li>禁用iPhone字体自适应功能：</li>
-</ul><blockquote>
-<pre><code>html {
-    -webkit-text-size-adjust: none;
-}
-</code></pre>
-</blockquote>
+#### 2.3.1 HTML 注释格式约定  
+    <!--
+    @name: Drop Down Menu
+    @description: Style of top bar drop down menu.
+    @author: Andy Huang(andyahung@geekpark.net)
+    -->
+    
+    <div id="header">
+        <div class="xxx">
+            <span>HTML行内注释格式</span>
+        </div>
+    </div><!-- #header end-->
 
-<ul>
-<li>让 IE 9 以下的IE版本支持响应式：</li>
-</ul><blockquote>
-<pre><code>&lt;!--[if lt IE 9]&gt;
-    &lt;script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"&gt;&lt;/script&gt;
-&lt;![endif]--&gt;
-</code></pre>
-</blockquote>
+* HTML换行缩进：**采用 2 空格**
 
-<h3>Newletter 制作规范</h3>
+#### 2.3.2 HTML嵌套规则  
+    /* 推荐嵌套层级 */
+      <ul class="ui-nav">
+        <li class="ui-nav-item"> some text
+          <ul class="ui-nav-item-child">
+            <li> some text
+              <ul class="ui-list">
+                <li class="ui-list-item"> some text</li>
+              </ul
+            ...
+           </ul>
+        </li>
+        <li
+        ...
+      </ul>
 
-<ul>
-<li>
-<code>CSS</code>只可使用 <strong>内联样式表</strong> ，如：<code>style="margin:0;"</code>
-</li>
-<li>设计之初遵循： <strong>图上无文本，文本后无底纹</strong> 的规则</li>
-<li>使用 <code>MailChimp HTML Email CSS Fix</code> 参看下文链接</li>
-<li>引入 <code>CSS Reset for HTML Email</code> 参看下文链接</li>
-<li>使用<code>Table</code>布局而非<code>DIV</code>
-</li>
-<li>所有图片使用<code>IMG</code>标签，如：<code>&lt;img style="style="display:block" "src="" /&gt;</code>
-</li>
-<li>可以适当使用占位符<code>spacer.gif</code>
-</li>
-<li>多用<code>&lt;br /&gt;</code>换行而非<code>&lt;p&gt;</code>
-</li>
-<li>整体最佳宽度为：<code>550-600px</code>
-</li>
-<li>不使用<code>Javascript</code>
-</li>
-<li>正式发送给用户之前，多次测试</li>
-</ul><p>更多细节参考下面链接：<br><a href="http://www.web-ed.com.au/2011/05/coding-html-newsletters-edms-quick-guide/">12 Killer Tips and Tricks for Building HTML Email</a></p>
+#### 2.3.4 \* 第一行统一使用HTML5标准：<!DOCTYPE html>
+    <!DOCTYPE html>
+    <html dir="ltr" lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>极客公园 | 创新者社区</title>
+        <meta name="keywords" content="xxxx, xxx, xxxxx" />
+        <meta name="description" content="xxxxxxxxxxxxxxxxxxxx" />
+        
 
-<h3>生产力工具推荐(Mac)</h3>
+#### 2.3.5 Meta 的使用：（需要根据具体需求按需选择）可参看：[cool-head]
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="max-age=7200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.geekpark.net/" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <script type="text/javascript" src="/js/xxx.js"></script>
+    <link rel="stylesheet" href="/css/xxx.css">
+    
+    <script type="text/javascript">
+        Google 统计代码 的位置在离</head>最近的位置
+  </script>
+    </head>
 
-<p><em>for more app detial check -&gt; <a href="http://osx.iusethis.com/user/hzlzh" title="App pack">IUSETHIS</a></em>  </p>
+* `<img>`标签默认缺省格式：`<img src="xxx.png" alt="缺省时文字" />` 避免出现[src="" 问题]
+* `<a>`标签缺省格式：`<a href="###" title="链接名称">xxx</>` 注：`target="_blank"` 根据需求决定  
+* <a>标签预留链接占位符使用`###`，参见：[a标签占位符问题]
+* 所有标签需要符合XHTML标准闭合
+* 一律统一标签结尾斜杠的书写形式：`<br />` `<hr />` 注意之间空格
+* 避免使用已过时标签，如：`<b>` `<u>` `<i>` 而用 `<strong>` `<em>`等代替
+* 使用`data-xxx`来添加自定义数据，如：`<input data-xxx="yyy"/>`
+* 避免使用`style="xxx:xxx;"`的内联样式表
+* 特殊符号使用参考[HTML 符号实体]
 
-<h5>前端相关工具</h5>
+### 2.4 JS 细化规范
 
-<ul>
-<li>编辑器：<a href="http://www.sublimetext.com/2">Sublime Text 2</a> / <a href="https://github.com/textmate/textmate">TextMate 2</a> / <a href="http://macvim.org/">Vim</a>
-</li>
-<li>命令行：<a href="http://www.iterm2.com/">iTerm2</a>
-</li>
-<li>浏览器调试环境：<a href="http://www.google.com/chrome">Chrome</a> / <a href="http://www.mozilla.org/">Firefox</a> + <a href="http://getfirebug.com/">Firebug</a>
-</li>
-<li>移动设备浏览器：<a href="http://www.mozilla.org/projects/fennec">Mozilla Fennec</a>
-</li>
-<li>兼容性测试：<a href="https://www.virtualbox.org/">VirtualBox</a> + Win XP（IE 8）</li>
-<li>版本控制工具：<a href="http://mac.github.com/">GitHub for Mac</a> / <a href="http://versionsapp.com/">Versions</a> / <a href="http://www.sourcetreeapp.com/">SourceTree</a>
-</li>
-<li>FTP工具：<a href="http://filezilla-project.org/">Filezilla</a> / <a href="http://itunes.apple.com/us/app/forklift/id412448059?mt=12">ForkLift</a>
-</li>
-<li>HTTP抓包及Post/Get模拟：<a href="http://www.charlesproxy.com/">Charles</a>
-</li>
-<li>PHP集成环境：<a href="http://www.apachefriends.org/en/xampp-macosx.html">XAMPP for Mac</a>
-</li>
-<li>SQL数据库管理：<a href="http://www.sequelpro.com/">Sequel Pro</a>
-</li>
-<li>标注工具：<a href="http://www.getmarkman.com/">Mark Man</a> / <a href="http://itunes.apple.com/us/app/xscope/id447661441?mt=12">xScope</a>
-</li>
-<li>取色拾色器： <a href="http://www.jumpzero.com/frank/">Frank DeLoupe</a> / <a href="http://itunes.apple.com/app/sip/id507257563?mt=12">Sip</a> / <a href="http://itunes.apple.com/us/app/snip/id512505421?mt=12">Snip</a> / <a href="http://itunes.apple.com/us/app/xscope/id447661441?mt=12">xScope</a>
-</li>
-<li>MarkDown编辑器：<a href="http://mouapp.com/">Mou</a>
-</li>
-<li>浏览器免刷新开发环境：<a href="http://http://livereload.com/">LiveReLoad</a> / <a href="http://incident57.com/codekit/">CodeKit</a>
-</li>
-<li>CSS Sprite切图工具：<a href="http://itunes.apple.com/us/app/spriteright/id488584662?mt=12">SpriteRight</a>
-</li>
-<li>Less -&gt; CSS 编译：<a href="http://incident57.com/codekit/">CodeKit</a> / <a href="http://http://livereload.com/">LiveReLoad</a> / <a href="http://incident57.com/less/">Less</a>
-</li>
-<li>配色方案工具：<a href="http://itunes.apple.com/us/app/colorschemer-studio/id417896628?mt=12">ColorSchemer Studio</a>
-</li>
-<li>多浏览器Cookie管理：<a href="http://itunes.apple.com/us/app/cookie/id415585910?mt=12">Cookie</a>
-</li>
-<li>图片素材收集：<a href="http://seesparkbox.com/">Sparkbox</a> / <a href="http://www.pixa-app.com/">Pixa</a>
-</li>
-</ul><h5>其他效率工具</h5>
+#### 2.4.1 JS 文件结构
+    ---/js/
+    |---- /libs/plugin-1/       使用到的js插件1  
+    |---- /libs/plugin-2/       使用到的js插件2  
+    |---- /libs/plugin-3/       使用到的js插件3  
+    |---- script.js             单独书写的js  
+    |---- plugins.js            调用的plugins汇总  
+    |---- juqery-1.9.x.min.js   调用jq库文件  
 
-<ul>
-<li>快速启动及切换app：<a href="http://www.alfredapp.com/">Alfred</a>
-</li>
-<li>笔记：<a href="http://www.evernote.com/">Evernote</a>
-</li>
-<li>压缩解压：<a href="https://itunes.apple.com/hk/app/the-unarchiver/id425424353?mt=12">The Unarchiver</a> / <a href="https://itunes.apple.com/us/app/keka/id470158793?mt=12">Keka</a> / <a href="https://itunes.apple.com/us/app/ipack/id433386677?mt=12">iPack</a>
-</li>
-</ul><h5>其他收集</h5>
+* JS 换行缩进：采用 4 空格
+* 结束行需添加分号`;`
+* jQuery变量要求首字符为 `$`, 私有变量:首字符为`_`; 尽量避免全局变量.
+* 避免使用 eval()，setTimeOut使用调用函数，考虑重绘，回流 操作对页面影响  参看：[reflows，repaints]
+* JS调试使用`console.log()`及`console.dir()`进行，避免使用弹出框，线上版需要注释所有调试代码
+* JS压缩混淆工具: [JS Compressor]  如果使用了压缩，需要留 `name-src.js`在同路径供今后修改使用
 
-<ul>
-<li>Firefox 扩展收藏集 -&gt; <a href="https://addons.mozilla.org/en-US/firefox/collections/hzlzh/hzlzh/">Firefox Add-ons collections</a>
-</li>
-<li>Chrome 扩展 -&gt; 待添加</li>
-<li>Sublime Text 2 技巧  -&gt; <a href="http://www.douban.com/group/topic/28027863/">ST2 资源技巧汇总</a>
-</li>
-</ul><h3>相关技巧</h3>
+##### 2.4.2 jQuery Call
+    <!-- Grab Google CDN jQuery. fall back to local if necessary -->  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
+    <script>!window.jQuery && document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>            
+##### 2.4.3 jQuery Plugin
 
-<p><a href="https://github.com/GeekPark/Doc/wiki/_pages">Wiki page index</a></p>
+* IE对HTML5标签支持，以及浏览器特性检测：[Modernizr] & [html5shiv]
+* <del>IE6 PNG 图片支持：[DD_belatedPNG]</del>
+* 定制&统一 浏览器的滚动条样式：[jquery-scroll] & [Lionbars]
+* hover提示效果文字：[bootstrap-tooltips] & [tipsy]
+* 滚动条跟随nav效果：[bootstrap-scrollspy]
+* 提示冒泡文字：[grumble.js]
+* 导航栏过渡效果：[lavalamp]
+* 移动设备的滚动效果：[iscroll 4]
+* Mac OS Lion 风格的滚动条：[Lionbars]
+* 弹性SlideShow：[kwicks for jQuery]
+* 瀑布流：[isotope]
+* 抖动效果：[jQ shake]
+* LightBox：[fancyBox]
+* KenDo UI：[KenDo UI]
+* textarea自适应高度：[elastic]
+* 提示区域 & 提示层：[noty]
+* 浮动话题泡：[jQuery grumble]
+* 旋转进度：[jQuery Knob]
 
-<ul>
-<li>
-<a href="https://github.com/GeekPark/Doc/wiki/%5B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E7%BC%93%E5%AD%98%5D%E5%90%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B5%8B%E8%AF%95%E7%BD%91%E9%A1%B5%E6%97%B6%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9A%84%E6%96%B9%E6%B3%95">各浏览器的缓存清除方法</a><br>
-</li>
-<li>
-<a href="https://github.com/GeekPark/Doc/wiki/%5B%E6%B5%8B%E8%AF%95%E6%8A%80%E5%B7%A7%5DGmail-%E6%B7%BB%E5%8A%A0%E8%AF%8D%E7%BC%80(.--)%E8%8E%B7%E5%BE%97%E5%A4%9A%E4%B8%AA%E9%82%AE%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95">测试技巧Gmail 添加词缀(.+)获得多个邮件的方法</a><br>
-</li>
-<li>
-<a href="https://github.com/GeekPark/Doc/wiki/%E5%85%B3%E4%BA%8E%5BMac%5D-%5BWin%5D-%5BLinux%5D%E8%B7%A8%E7%B3%BB%E7%BB%9F%E4%BC%A0%E6%96%87%E4%BB%B6%EF%BC%8C%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">关于Mac Win Linux跨系统传文件，文件名乱码的解决方案</a><br>
-</li>
-<li><a href="https://github.com/GeekPark/Doc/wiki/%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F%5B%E8%B7%AF%E7%94%B1%E4%BB%A3%E7%90%86%5D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%92%8C%E4%BD%BF%E7%94%A8%E9%A1%BB%E7%9F%A5">技术团队"路由代理"解决方案和使用须知</a></li>
-</ul><h3>参考数据</h3>
+##### 2.4.4 JSON格式规范  
+参考[JSON Style Guide翻译]，原版：[Google JSON Style Guide]
 
-<p>涉及到 <code>设计</code>-&gt;<code>重构</code>-&gt;<code>兼容性</code>-&gt;<code>测试</code> 时可参考各浏览器的占用情况<br><em>-- updated: <code>2012-08</code></em>  via <code>Google Analytics of GeekPark</code>  </p>
+### HTML 细化规范
+* HTML `head`部分的结构参看：[cool-head] \(摘取必要内容即可)
+* `css` 文件置于都 **头部**
+* `jQuery` 及 `Google Analytics`引用置于 **头部**
+* 其他效果`js`及`统计代码` 文件置于 **尾部**
+* HTML 代码尽量过一遍[HTML5 验证]
+* HTML 占位图片使用 [temp.im] & [placehold.us] 图片服务
+
+### 2.5 Responsive Web 规范
+从设计之处就坚持"[Mobile First]"的理念，在重构页面的时候要灵活采取响应式的解决方案。
+
+#### 2.5.1 响应式实现途径
+\* 设置 [meta viewport] 属性
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+\* 引入不同尺寸设备的样式表
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+    <link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" />
+    <!--[if (lt IE 9)&(!IEMobile)]>
+    <link rel="stylesheet" type="text/css" href="enhanced.css" />
+    <![endif]-->
+    
+\* 使用 [CSS Media Queries] 方法
+
+    @media screen and (max-width: 40.5em) {
+      .product-img {
+        width: auto;
+        float: none;
+      }
+    }
+    @media screen and (max-width: 480px) {
+    }
+    
+\* JS控制导航栏在 [resize 事件] 触发后的可见性，如：
+
+    $(w).resize(function(){ //Update dimensions on resize
+      sw = document.documentElement.clientWidth;
+      sh = document.documentElement.clientHeight;
+      checkMobile();
+    });
+    //Check if Mobile
+    function checkMobile() {
+      mobile = (sw > breakpoint) ? false : true;
+      if (!mobile) { //If Not Mobile
+        $('[role="tabpanel"],#nav,#search').show(); //Show full navigation and search
+      } else { //Hide 
+        if(!$('#nav-anchors a').hasClass('active')) {
+          $('#nav,#search').hide(); //Hide full navigation and search
+        }
+      }
+    }
+    
+#### 2.5.2 响应式解决方案
+\* 弹性图片
+
+    img {
+      max-width: 100%;
+      height: auto;
+      width: auto\9; /* ie8 */
+    }
+
+\* 自适应嵌入媒体
+
+    .video embed, .video object, .video iframe {
+      width: 100%;
+      height: auto;
+    }
+
+\* 禁用iPhone字体自适应功能：
+
+    html {
+      -webkit-text-size-adjust: none;
+    }
+
+\* 让 IE 9 以下的IE版本支持响应式：
+
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+### 2.6 Newletter 制作规范
+* `CSS`只可使用 **内联样式表** ，如：`style="margin:0;"`
+* 设计之初遵循： **图上无文本，文本后无底纹** 的规则
+* 使用 `MailChimp HTML Email CSS Fix` 参看下文链接
+* 引入 `CSS Reset for HTML Email` 参看下文链接
+* 使用`Table`布局而非`DIV`
+* 所有图片使用`IMG`标签，如：`<img style="style="display:block" "src="" />`
+* 可以适当使用占位符`spacer.gif`
+* 多用`<br />`换行而非`<p>`
+* 整体最佳宽度为：`550-600px`
+* 不使用`Javascript`
+* 正式发送给用户之前，多次测试
+
+更多细节参考下面链接：  
+[12 Killer Tips and Tricks for Building HTML Email]  
+[Coding HTML Newsletters\(EDM’s\)]
+
+### 2.7 生产力工具推荐(Mac)
+*for more app detial check -> [IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
+#### 2.7.1 前端相关工具
+
+* 编辑器：[Sublime Text 2] / [TextMate 2] / [Vim]
+* 命令行：[iTerm2]
+* 浏览器调试环境：[Chrome] / [Firefox] + [Firebug]
+* 移动设备浏览器：[Mozilla Fennec]
+* 兼容性测试：[VirtualBox] + Win XP（IE 8）
+* 版本控制工具：[GitHub for Mac] / [Versions] / [SourceTree]
+* FTP工具：[Filezilla] / [ForkLift]
+* HTTP抓包及Post/Get模拟：[Charles]
+* PHP集成环境：[XAMPP for Mac]
+* SQL数据库管理：[Sequel Pro]
+* 标注工具：[Mark Man] / [xScope]
+* 取色拾色器： [Frank DeLoupe] / [Sip] / [Snip] / [xScope]
+* MarkDown编辑器：[Mou]
+* 浏览器免刷新开发环境：[LiveReLoad] / [CodeKit]
+* CSS Sprite切图工具：[SpriteRight]
+* Less -> CSS 编译：[CodeKit] / [LiveReLoad] / [Less]
+* 配色方案工具：[ColorSchemer Studio]
+* 多浏览器Cookie管理：[Cookie]
+* 图片素材收集：[Sparkbox] / [Pixa]
+
+#### 2.7.2 其他效率工具
+
+* 快速启动及切换app：[Alfred]
+* 笔记：[Evernote]
+* 压缩解压：[The Unarchiver] / [Keka] / [iPack]
+
+#### 2.7.3 其他收集
+* Firefox 扩展收藏集 -> [Firefox Add-ons collections]
+* Chrome 扩展 -> 待添加
+* Sublime Text 2 技巧  -> [ST2 资源技巧汇总]
+
+### 2.8 相关技巧
+[Wiki page index]
+
+* [各浏览器的缓存清除方法]  
+* [测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]  
+* [关于Mac Win Linux跨系统传文件，文件名乱码的解决方案]  
+* [技术团队"路由代理"解决方案和使用须知]
+
+### 2.9 参考数据
+涉及到 `设计`->`重构`->`兼容性`->`测试` 时可参考各浏览器的占用情况  
+*-- updated: `2012-08`*  via `Google Analytics of GeekPark`  
+
 
 <table>
+<tbody valign="top"><tr>
+<th align="center">总浏览器分布</th>
+<th align="center">IE版本分布</th>
+<th align="center">移动设备分布</th>
+<th align="center">屏幕解决方案</th>
+</tr>
 <tr>
-<th align="left">总浏览器分布</th>
+<td align="left">
+
+<table>
+<tbody><tr>
+<th align="left">类别</th>
 <th align="right">占有率</th>
 </tr>
 <tr>
@@ -735,9 +545,13 @@ function checkMobile() {
 <td align="left">Opera</td>
 <td align="right">0.86%</td>
 </tr>
-</table><table>
-<tr>
-<th align="left">IE版本分布</th>
+</tbody></table>
+</td>
+<td align="right">  
+
+<table>
+<tbody><tr>
+<th align="left">版本号</th>
 <th align="right">占有率</th>
 </tr>
 <tr>
@@ -760,9 +574,13 @@ function checkMobile() {
 <td align="left">IE 10</td>
 <td align="right">0.70%</td>
 </tr>
-</table><table>
-<tr>
-<th align="left">移动设备</th>
+</tbody></table>
+</td>
+<td align="right">
+
+<table>
+<tbody><tr>
+<th align="left">平台</th>
 <th align="right">占有率</th>
 </tr>
 <tr>
@@ -781,9 +599,12 @@ function checkMobile() {
 <td align="left">Windows Phone</td>
 <td align="right">0.49%</td>
 </tr>
-</table><table>
-<tr>
-<th align="left">屏幕分辨率</th>
+</tbody></table>
+</td>
+<td align="right">
+<table>
+<tbody><tr>
+<th align="left">分辨率</th>
 <th align="right">占有率</th>
 </tr>
 <tr>
@@ -806,19 +627,146 @@ function checkMobile() {
 <td align="left">1024x768</td>
 <td align="right">5.93%</td>
 </tr>
-</table><p>此规范基于 <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a> 开源，持续更新维护中，欢迎 <code>Star</code> 或 <code>Fork</code> 本项并目通过 <code>Pull Request</code> 贡献规范，请在这里反馈 <a href="https://github.com/hzlzh/GeekPark-FrontEnd-Standard/issues/new">创建[issues]</a></p>
-      </section>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+此规范基于 [MIT License] 开源，持续更新维护中，欢迎 `Star` 或 `Fork` 本项并目通过 `Pull Request` 贡献规范，请在这里反馈 [创建[issues]](https://github.com/hzlzh/GeekPark-FrontEnd-Standard/issues/new)
+
+[GeekPark]: http://geekpark.net/ "http://geekpark.net/"
+[ITvalue]: http://www.itvalue.com.cn/ "http://www.itvalue.com.cn/"
+[BusinessValue]: http://www.businessvalue.com.cn/ "http://www.businessvalue.com.cn/"
+
+[reflows，repaints]: http://www.zhangxinxu.com/wordpress/2010/01/%E5%9B%9E%E6%B5%81%E4%B8%8E%E9%87%8D%E7%BB%98%EF%BC%9Acss%E6%80%A7%E8%83%BD%E8%AE%A9javascript%E5%8F%98%E6%85%A2%EF%BC%9F/  "重绘,回流参考"
+[src="" 问题]: http://js8.in/555.html "src="" 问题"
+[a标签占位符问题]: http://www.v2ex.com/t/48511/ "a标签占位符问题"
+
+[匈牙利命名法]: http://zh.wikipedia.org/wiki/%E5%8C%88%E7%89%99%E5%88%A9%E5%91%BD%E5%90%8D%E6%B3%95 "Wiki:匈牙利命名法"
+[小駝峰式命名法]:http://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB "小駝峰式命名法"
+[CSS Compressor]: http://www.csscompressor.com/ "CSS 压缩"
+[JS Compressor]: http://javascriptcompressor.com/ "JS 压缩和混淆"
+[HTML 符号实体]: http://www.w3school.com.cn/html/html_entities.asp 
+[Google JSON Style Guide]:http://google-styleguide.googlecode.com/svn/trunk/jsoncstyleguide.xml
+[JSON Style Guide翻译]:https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md
+[meta viewport]: https://developer.mozilla.org/en-US/docs/Mobile/Viewport_meta_tag "<meta> ViewPort"
+[CSS Media Queries]: http://css-tricks.com/css-media-queries/
+[resize 事件]: http://api.jquery.com/resize/
+
+[Lesselements]: http://lesselements.com/
+[Bootstrap]: http://twitter.github.com/bootstrap/ "Bootstrap, from Twitter"
+[reset.css]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.css "CSS reset 文件"
+[reset.less]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/reset.less "reset.less from HTML5 Boilerplate"
+[elements.less]: https://github.com/hzlzh/cool-head/blob/master/Template/css/libs/elements.less "elements.less from lesselements"
+[HTML5 验证]: http://html5.validator.nu/
+
+[Modernizr]: http://modernizr.com/download/
+[DD_belatedPNG]: http://www.dillerdesign.com/experiment/DD_belatedPNG/
+[html5shiv]: https://github.com/aFarkas/html5shiv
+[jquery-scroll]: https://github.com/thomd/jquery-scroll/
+[Lionbars]: https://github.com/Charuru/lionbars
+[bootstrap-tooltips]: http://twitter.github.com/bootstrap/javascript.html#tooltips
+[bootstrap-scrollspy]: http://twitter.github.com/bootstrap/javascript.html#scrollspy
+[grumble.js]: https://github.com/jamescryer/grumble.js
+[lavalamp]: http://www.gmarwaha.com/blog/2007/08/23/lavalamp-for-jquery-lovers/
+[iscroll 4]: https://github.com/cubiq/iscroll
+[kwicks for jQuery]: https://github.com/Mottie/Kwicks
+[isotope]: https://github.com/desandro/isotope
+[jQ shake]: https://gist.github.com/3270711
+[fancyBox]: https://github.com/fancyapps/fancyBox
+[KenDo UI]: http://www.kendoui.com/purchase.aspx
+[elastic]: http://unwrongest.com/projects/elastic/
+[cool-head]: https://github.com/hzlzh/cool-head
+[noty]: https://github.com/needim/noty
+[jQuery grumble]: https://github.com/jamescryer/grumble.js
+[tipsy]: https://github.com/jaz303/tipsy
+[jQuery Knob]: https://github.com/aterrien/jQuery-Knob
+
+[各浏览器的缓存清除方法]: https://github.com/GeekPark/Doc/wiki/%5B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E7%BC%93%E5%AD%98%5D%E5%90%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B5%8B%E8%AF%95%E7%BD%91%E9%A1%B5%E6%97%B6%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98%E7%9A%84%E6%96%B9%E6%B3%95
+[测试技巧Gmail 添加词缀\(.+\)获得多个邮件的方法]: https://github.com/GeekPark/Doc/wiki/%5B%E6%B5%8B%E8%AF%95%E6%8A%80%E5%B7%A7%5DGmail-%E6%B7%BB%E5%8A%A0%E8%AF%8D%E7%BC%80(.--)%E8%8E%B7%E5%BE%97%E5%A4%9A%E4%B8%AA%E9%82%AE%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95
+[关于Mac Win Linux跨系统传文件，文件名乱码的解决方案]: https://github.com/GeekPark/Doc/wiki/%E5%85%B3%E4%BA%8E%5BMac%5D-%5BWin%5D-%5BLinux%5D%E8%B7%A8%E7%B3%BB%E7%BB%9F%E4%BC%A0%E6%96%87%E4%BB%B6%EF%BC%8C%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88
+[技术团队"路由代理"解决方案和使用须知]: https://github.com/GeekPark/Doc/wiki/%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F%5B%E8%B7%AF%E7%94%B1%E4%BB%A3%E7%90%86%5D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%92%8C%E4%BD%BF%E7%94%A8%E9%A1%BB%E7%9F%A5
+[Mobile First]: http://www.lukew.com/ff/entry.asp?933 "Mobile First"
+
+
+[Sublime Text 2]:http://www.sublimetext.com/2
+[TextMate 2]:https://github.com/textmate/textmate
+[Vim]:http://macvim.org/
+[Chrome]:http://www.google.com/chrome
+[Firefox]:http://www.mozilla.org/
+[Firebug]:http://getfirebug.com/
+[VirtualBox]:https://www.virtualbox.org/
+[Versions]:http://versionsapp.com/
+[GitHub for Mac]:http://mac.github.com/
+[SourceTree]:http://www.sourcetreeapp.com/
+[Filezilla]:http://filezilla-project.org/
+[ForkLift]:http://itunes.apple.com/us/app/forklift/id412448059?mt=12
+[Charles]:http://www.charlesproxy.com/
+[XAMPP for Mac]:http://www.apachefriends.org/en/xampp-macosx.html
+[Mark Man]:http://www.getmarkman.com/
+[xScope]:http://itunes.apple.com/us/app/xscope/id447661441?mt=12
+[Sip]:http://itunes.apple.com/app/sip/id507257563?mt=12
+[Snip]:http://itunes.apple.com/us/app/snip/id512505421?mt=12
+[Mou]:http://mouapp.com/
+[LiveReLoad]:http://http://livereload.com/
+[Cookie]:http://itunes.apple.com/us/app/cookie/id415585910?mt=12
+[ColorSchemer Studio]:http://itunes.apple.com/us/app/colorschemer-studio/id417896628?mt=12
+[Less]:http://incident57.com/less/
+[CodeKit]: http://incident57.com/codekit/
+[SpriteRight]:http://itunes.apple.com/us/app/spriteright/id488584662?mt=12
+[iTerm2]: http://www.iterm2.com/
+[Mozilla Fennec]: http://www.mozilla.org/projects/fennec
+[Sequel Pro]: http://www.sequelpro.com/
+[Sparkbox]: http://seesparkbox.com/
+[Pixa]: http://www.pixa-app.com/
+[Alfred]: http://www.alfredapp.com/
+[Evernote]: http://www.evernote.com/
+[The Unarchiver]: https://itunes.apple.com/hk/app/the-unarchiver/id425424353?mt=12
+[Keka]: https://itunes.apple.com/us/app/keka/id470158793?mt=12
+[iPack]: https://itunes.apple.com/us/app/ipack/id433386677?mt=12
+[Frank DeLoupe]: http://www.jumpzero.com/frank/
+
+[temp.im]: http://temp.im/ "Placehold image"
+[placehold.us]: http://placehold.us/
+
+[Firefox Add-ons collections]: https://addons.mozilla.org/en-US/firefox/collections/hzlzh/hzlzh/
+[ST2 资源技巧汇总]: http://www.douban.com/group/topic/28027863/
+[Wiki page index]: https://github.com/GeekPark/Doc/wiki/_pages
+
+[12 Killer Tips and Tricks for Building HTML Email]: http://www.queness.com/post/8784/12-killer-tips-and-tricks-for-building-html-email
+[Coding HTML Newsletters\(EDM’s\)]: http://www.web-ed.com.au/2011/05/coding-html-newsletters-edms-quick-guide/
+
+[MIT License]: http://en.wikipedia.org/wiki/MIT_License
+
+</textarea>
+
+          </div>
+        </div>
+      </article>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Geekpark-frontend-standard maintained by <a href="https://github.com/hzlzh">hzlzh</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+    <footer>
+        <div id="footer">
+    <span id="convertTextControls" style="display:none">
+      <button id="convertTextButton" type="button" title="Convert text now">
+        Convert text
+      </button>
+      <select id="convertTextSetting">
+        <option value="delayed">in the background</option>
+        <option value="continuous">every keystroke</option>
+        <option value="manual">manually</option>
+      </select>
+    </span>
+    <div id="processingTime" title="Last processing time">0 ms</div>
+  </div>
+    </footer>
+    <script>
+      //<![CDATA[
+        // here the post-load JS starts.
+      //]]>
+    </script>
   </body>
 </html>

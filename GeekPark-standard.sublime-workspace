@@ -1,0 +1,971 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pos",
+				"pos:a	position:absolute"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"fon",
+				"font"
+			],
+			[
+				"mo",
+				"mouseleave"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"po",
+				"pos:a	position:absolute"
+			],
+			[
+				"fl",
+				"fl:r	float:right"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"fi",
+				"filter"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"sl",
+				"slideUp"
+			],
+			[
+				"sli",
+				"slideUp"
+			],
+			[
+				"fad",
+				"fadeOut"
+			],
+			[
+				"fde",
+				"fadeIn"
+			],
+			[
+				"product",
+				"data-product-id"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"check",
+				"checked"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"parent",
+				"parents"
+			],
+			[
+				"cur",
+				"cur:p	cursor:pointer"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"sc",
+				"scroll"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"c",
+				"cur	cursor"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"bgr",
+				"bgr:n	background-repeat:no-repeat"
+			],
+			[
+				"ov",
+				"ov:h	overflow:hidden"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"jquery",
+				"jQuery.post	jQuery.post"
+			],
+			[
+				"rea",
+				"ready	document ready - jQuery"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"ta",
+				"ta:c	text-align:center"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"jque",
+				"jQuery.post	jQuery.post"
+			],
+			[
+				"ev",
+				"event_key"
+			],
+			[
+				"api",
+				"api_key"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"li-img",
+				"li-img"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"ul",
+				"ul"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"r",
+				"relative"
+			],
+			[
+				"bg",
+				"bgi	background-image"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"br",
+				"background-repeat"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"sol",
+				"solid-line"
+			],
+			[
+				"subm",
+				"submit-btn"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"tex",
+				"text-indent"
+			],
+			[
+				"de",
+				"text-decoration"
+			],
+			[
+				"total",
+				"total_page"
+			],
+			[
+				"jqe",
+				"jQuery.get	jQuery.get"
+			],
+			[
+				"load",
+				"load_captcha"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"slid",
+				"slideUp"
+			],
+			[
+				"jQ",
+				"jQuery.get	jQuery.get"
+			],
+			[
+				"aja",
+				"ajax-box"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"par",
+				"parent"
+			],
+			[
+				"clear",
+				"clear_form_msg"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"login",
+				"loginname"
+			],
+			[
+				"list",
+				"list_box"
+			],
+			[
+				"fir",
+				"first-child"
+			],
+			[
+				"an",
+				"anonymous"
+			],
+			[
+				"pren",
+				"parent"
+			],
+			[
+				"paren",
+				"parents"
+			],
+			[
+				"li",
+				"live"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"loginna",
+				"loginname"
+			],
+			[
+				"is",
+				"is-login"
+			],
+			[
+				"cac",
+				"capcha"
+			],
+			[
+				"sil",
+				"siblings"
+			],
+			[
+				"si",
+				"siblings"
+			],
+			[
+				"sou",
+				"source_url"
+			],
+			[
+				"share",
+				"share_url"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"conso",
+				"console.log('')	console.log('')"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/libs/showdown-gui.js",
+			"settings":
+			{
+				"buffer_size": 8681,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 49.0,
+		"selected_items":
+		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ja",
+				"Format: Javascript"
+			],
+			[
+				"ht",
+				"Tidy HTML"
+			],
+			[
+				"js",
+				"Set Syntax: JSON"
+			],
+			[
+				"jso",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"pre",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Tidy HTML"
+			],
+			[
+				"java",
+				"Format: Javascript"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"prett",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"fo",
+				"Format: Javascript"
+			],
+			[
+				"def",
+				"Preferences: Settings - Default"
+			],
+			[
+				"alia",
+				"Preferences: Alignment Key Bindings – Default"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/index.html",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/README.md",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/style.css",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/style.less",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/index.haml",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/js/libs/showdown-gui.js",
+		"/Users/hzlzh/Project/hzlzh/showdown/example/showdown-gui.html",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/javascripts/main.js",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/params.json",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/CNAME",
+		"/Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/themes/twentytwelve/rtl.css",
+		"/Users/hzlzh/Project/hzlzh/cool-head/Template/README.md",
+		"/Users/hzlzh/Project/hzlzh/cool-head/Template/index.html",
+		"/Users/hzlzh/Project/hzlzh/cool-head/Template/index.haml",
+		"/Users/hzlzh/Project/hzlzh/cool-head/coll-head.sublime-workspace",
+		"/Users/hzlzh/Project/hzlzh/cool-head/untitled.sublime-project",
+		"/Users/hzlzh/Project/hzlzh/temp.im/untitled.sublime-project",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/controllers/pub.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/partial/sidebar_pub.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/layouts/default_pub.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/product.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/poll.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/public/js/script.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/partial/banner.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/itvalue/application/views/admin/module_data_add.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/partial/sidebar_join.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/partial/sidebar_empty.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/partial/banner_empty.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/public/css/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/itvalue/application/views/input/tag_one_search.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/system/core/Input.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/succeed.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/join_in_step3.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/join_in_step1.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/join_in_step2.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/public/js/libs/noty/themes/default.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/public/js/libs/noty/jquery.noty.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/config/config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/history_2010.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/partners.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/contact.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/controllers/poll.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/history_2011.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/special/windows_8.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/rules.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/jury/sign_up_form.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/css/observer-style.css",
+		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/js/observer-script.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/frame/head/pri_head1.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/blue/observer.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/blue/root.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/config/template.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/controllers/observer.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/observer/apply.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/css/observer-style.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/frame/head/pri_head2.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/js/script.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/about.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/pub/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/login.php",
+		"/Users/hzlzh/Desktop/example/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/index.html",
+		"/Users/hzlzh/Desktop/example/css/website.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/public/css/test.css",
+		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/layouts/default_admin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/partial/iApps2012.sublime-project",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/rules.php",
+		"/Users/hzlzh/Desktop/test-mail-2.html",
+		"/Users/hzlzh/Desktop/test1.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/n/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/footer.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/index.html",
+		"/Users/hzlzh/Project/hzlzh/iApps2012/index.html",
+		"/Users/hzlzh/Project/hzlzh/iApps2012/css/style.css",
+		"/Users/hzlzh/Project/hzlzh/Rhea/feedback.html",
+		"/Users/hzlzh/Project/hzlzh/iApps2012/css/reset.css",
+		"/Users/hzlzh/Project/hzlzh/iApps2012/.gitignore",
+		"/Users/hzlzh/Project/hzlzh/iApps2012/. gitignore",
+		"/Users/hzlzh/Project/hzlzh/iApps2012/iApps2012.sublime-workspace",
+		"/Users/hzlzh/Project/hzlzh/iApps2012/js/script.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/controllers/cast.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/search/header.php",
+		"/Users/hzlzh/Desktop/setting.xml",
+		"/Users/hzlzh/Desktop/update.xml",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/blue/login_root.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/frame/root_header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/css/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/rhea/rhea.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/controllers/rhea.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/css/login-style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/css/seed.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/reuse/comment.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/notification/notify_right.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/libraries/Captcha_engine_lib.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/js/login-script.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/js/script-src.js",
+		"/Users/hzlzh/Desktop/ssl.crt",
+		"/Users/hzlzh/Desktop/ssl.key",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/config/config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/scripts/setting_update.php",
+		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/language/chinese/event_lang.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/reuse/share.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/.htaccess",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/login/job.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/readme.txt",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/favicon.png",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/event/collection.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/layout/filter-box.php",
+		"/Users/hzlzh/Desktop/test/script-old.js",
+		"/Users/hzlzh/Desktop/untitled.html",
+		"/Users/hzlzh/Desktop/untitled.sublime-snippet"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"<open folders>",
+			"/",
+			"/Applications/XAMPP/xamppfiles/htdocs/,/Applications/XAMPP/xamppfiles/htdocs/itvalue",
+			"/Applications/XAMPP/xamppfiles/htdocs/",
+			"/Applications/XAMPP/xamppfiles/htdocs/iapps2012",
+			"/Applications/XAMPP/xamppfiles/htdocs/geekevent",
+			"<open files>",
+			"",
+			"/Applications/XAMPP/xamppfiles/htdocs/geekevent",
+			"",
+			"/Applications/XAMPP/xamppfiles/htdocs/geekevent"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"y tt",
+			".tt",
+			"tt",
+			"nav",
+			"body .container nav",
+			"000",
+			"222",
+			"outputPane",
+			"del",
+			"height",
+			"outputPane",
+			"height",
+			"671",
+			".markdown-body",
+			"paneHeader",
+			"inputPane",
+			"syntaxPane",
+			"convertTextSetting",
+			"remot",
+			"@media screen and ",
+			"submit_tooltip",
+			"submit_tool",
+			"已满",
+			"text-box",
+			"autoComplete",
+			"tag_dynamic_list",
+			"输入数据进行搜索，比如",
+			"tag_dynamic_list",
+			"ui-autocomplete-input",
+			"auto-complete ui-autocomplete-input ui-corner-all",
+			"id_author",
+			"tiny",
+			"tinymce",
+			"ti'n'y'm'ce",
+			"mceeditor",
+			"id",
+			"每个",
+			".container .main-content .content .submit-btn",
+			"text-indent:999",
+			"submit-btn",
+			"上传必填资料",
+			"上传必填资料，以完成注册",
+			"generate",
+			"noty",
+			"not",
+			"default",
+			"display:inline-block;",
+			"console",
+			"description-content",
+			"我已经在极客公园『爱应用·2012中国互联网创新产品评选』中投了【X】一票，如果你也认同产品的价值，那么就请用鼠标来表个态吧。点击：链接 进行投票。用你我之力，推动中国互联网产品创新之风。",
+			".share-link ul li",
+			"%E6%9E%81%E5%AE%A2%E5%85%AC%E5%9B%AD%E6%AD%A3%E5%9C%A8%E6%8B%9B%E5%8B%9F%E2%80%9C%E4%BA%A7%E5%93%81%E8%A7%82%E5%AF%9F%E5%AE%B6%E2%80%9D%EF%BC%8C%E8%BF%99%E6%98%AF%E4%B8%80%E7%BE%A4%E5%B0%86%E4%BA%A7%E5%93%81%E4%BB%B7%E5%80%BC%E7%96%AF%E7%8B%82%E6%92%AD%E6%92%92%E5%88%B0%E4%B8%96%E7%95%8C%E6%AF%8F%E4%B8%80%E4%B8%AA%E8%A7%92%E8%90%BD%E7%9A%84%E4%B8%80%E7%BE%A4%E4%BA%BA%EF%BC%8C%E4%BB%96%E4%BB%AC%E6%88%96%E7%83%AD%E8%A1%B7%E4%BA%8E%E7%A7%BB%E5%8A%A8%20App%EF%BC%8C%E6%88%96%E4%B8%93%E6%B3%A8%E4%BA%8E%E5%9E%82%E7%9B%B4%E9%A2%86%E5%9F%9F%EF%BC%9B%E4%BB%96%E4%BB%AC%E6%B7%B1%E5%AE%88%E5%9C%A8%E6%98%BE%E7%A4%BA%E5%99%A8%E5%89%8D%E5%8E%BB%E4%BD%93%E9%AA%8C%E9%82%A3%E4%BA%9B%E5%8F%AF%E8%83%BD%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84%E4%BA%A7%E5%93%81%E3%80%82%E7%9C%8B%E5%88%B0%E8%BF%99%E9%87%8C%E7%9A%84%E4%BA%A7%E5%93%81%E7%8B%82%E4%BA%BA%EF%BC%8C%E8%AF%B7%E4%B8%8D%E8%A6%81%E5%86%8D%E6%BD%9C%E6%B0%B4%EF%BC%8C%E6%88%90%E4%B8%BA%E2%80%9C%E4%BA%A7%E5%93%81%E8%A7%82%E5%AF%9F%E5%AE%B6%E2%80%9D%EF%BC%9Ahttp://www.geekpark.net/observer/apply%20%E5%92%8C%E6%9E%81%E5%AE%A2%E5%85%AC%E5%9B%AD%E4%B8%80%E8%B5%B7%E4%B8%BA%E4%BA%A7%E5%93%81%E4%B8%BA%E7%96%AF%E7%8B%82%E3%80%82",
+			"weibo-link-area",
+			"resizeimage",
+			"echo",
+			"vote-awards",
+			"submit_tooltip",
+			"product-comments",
+			"sidebar-des-content",
+			"share-link",
+			"tipsy",
+			"tip",
+			"tipys",
+			"tipy",
+			"hide_flag",
+			"$obj",
+			"hide_flag",
+			"show_flag",
+			"tool",
+			"cookie",
+			"a-delete",
+			"vote",
+			"s-join-in-btn",
+			".partners .container .main-content .content{width:100%;background:none;}",
+			"partners",
+			"history-2010",
+			".poll .vote-box .products-box",
+			"text-box",
+			"tips",
+			"auto",
+			"product-info",
+			"loading",
+			"tooltip",
+			"tips",
+			"award-area",
+			" delete",
+			"award-list",
+			"<li>点点网<i class=\"delete\"></i></li>\n                  <li>米聊<i class=\"delete\"></i></li>\n                  <li>360安全桌面<i class=\"delete\"></i></li>",
+			"date-",
+			"vote-icons",
+			"80x80",
+			"68x68",
+			"<a href=\"/\">",
+			"资深",
+			"cool",
+			"result-box",
+			"re'su'l't",
+			"                $('.item-message').html($(data.message)[0]);\nresult-box",
+			"                $('.item-message').html($(data.message)[0]);\nopenwrt-wrt54gs-jffs2.bin",
+			"def",
+			"de'f",
+			"id=\"apply",
+			"Windows 8 技巧",
+			"暂未确定",
+			"Windows 8 技巧",
+			"微软拼音输入法",
+			"success",
+			"des",
+			"aboutActive",
+			"title",
+			"load",
+			"observer-message",
+			"error",
+			"input",
+			"空",
+			"控",
+			"不能",
+			"体验",
+			"date",
+			"da te›",
+			"error",
+			"most-p ",
+			" class=\"on icons app-shadow\"",
+			"opacity",
+			"status",
+			"text-content",
+			"fancybox",
+			"anim"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"display:block;",
+			"我在极客公园『爱应用·2012中国互联网创新产品评选』为我眼中的好产品转身投票了！我们热爱互联网，相信创新的力量。尽管没有能力反转世界，但我们可以用鼠标推动产品价值的传播，用投票证明我们对产品创新的肯定。点击 链接 参与投票，成为推动产品价值浪潮中的一员。",
+			"",
+			" a-delete",
+			"a-delete",
+			"<li data-product-id=\"20\">点点网<i class=\"delete\"></i></li>\n                  <li data-product-id=\"21\">米聊<i class=\"delete\"></i></li>\n                  <li data-product-id=\"22\">360安全桌面<i class=\"delete\"></i></li>",
+			"data-",
+			"vote-icons award-1",
+			"75x75",
+			"80x80",
+			"<a href=\"http://www.geekpark.net/read/view/\">",
+			"",
+			"class=\"on icons app-shadow\"",
+			"",
+			"href=\"###\"",
+			"",
+			"/public/img/2010/",
+			"<label class=\"label\" for",
+			"<span class=\"error-info\"><?php echo form",
+			"partners",
+			"partnets",
+			"jpg",
+			"/public/img/p",
+			"/public/img/",
+			"",
+			"p",
+			".it",
+			"\"",
+			"]:",
+			"captcha",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/libs/showdown-gui.js",
+					"settings":
+					{
+						"buffer_size": 8681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8315,
+								8315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4501.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 299.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"input",
+				"geekevent/system/core/Input.php"
+			],
+			[
+				"/inpu",
+				"iapps2012/application/views/partial/sidebar_pub.php"
+			],
+			[
+				"po",
+				"iapps2012/application/views/pub/poll.php"
+			],
+			[
+				"config.php",
+				"iapps2012/application/config/config.php"
+			],
+			[
+				"poll.php",
+				"iapps2012/application/controllers/poll.php"
+			],
+			[
+				"",
+				"iapps2012/application/views/pub/poll.php"
+			],
+			[
+				"css",
+				"css/style.css"
+			],
+			[
+				"tagdynamic",
+				"public/js/libs/tagDynamic/jquery.tagDynamic.js"
+			],
+			[
+				"root",
+				"application/views/blue/root.html"
+			],
+			[
+				"rhea",
+				"application/views/frame/root_header.php"
+			],
+			[
+				"sty",
+				"public/css/style.css"
+			],
+			[
+				"scrip",
+				"public/js/script.js"
+			],
+			[
+				"roo",
+				"application/views/blue/login_root.html"
+			],
+			[
+				"seed",
+				"public/css/seed.css"
+			],
+			[
+				"login-cs",
+				"public/css/login-style.css"
+			],
+			[
+				"login-sc",
+				"public/js/login-script.js"
+			],
+			[
+				"captcha_engine_lib",
+				"application/libraries/Captcha_engine_lib.php"
+			],
+			[
+				"/lib/capc",
+				"application/libraries/Captcha_engine_lib.php"
+			],
+			[
+				"style",
+				"public/css/style.css"
+			],
+			[
+				"reuse",
+				"application/views/reuse/share.php"
+			],
+			[
+				"styl",
+				"public/css/style.css"
+			],
+			[
+				"scri",
+				"public/js/script.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/hzlzh/Dropbox/Workspace/GeekPark/Backups/sublime/iapps2012.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 118.0,
+	"status_bar_visible": true
+}
