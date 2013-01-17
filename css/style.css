@@ -219,12 +219,24 @@ body .container nav {
   text-align: right;
   width: 200px;
 }
+body .container nav.fixed {
+  position: fixed;
+  top: 0;
+}
 body .container nav ul {
-  padding-left: 35px;
+  padding-left: 25px;
 }
 body .container nav ul li {
   list-style: none;
   border-bottom: 1px solid #DADADA;
+}
+body .container nav ul li.active {
+  border-right: 3px solid #5E6B82;
+}
+body .container nav ul li.active a {
+  padding-right: 35px;
+  background: -moz-linear-gradient(left center, rgba(255, 255, 255, 0), #dadada) repeat scroll 0 0 transparent;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #dadada);
 }
 body .container nav ul li a {
   color: #333;
@@ -233,16 +245,14 @@ body .container nav ul li a {
   line-height: 44px;
   display: inline-block;
   padding-right: 23px;
-  transition: all 0.2s linear 0s;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   text-decoration: none;
 }
-body .container nav ul li a.current {
-  border-right: 2px solid #5E6B82;
-  padding-right: 21px;
-}
 body .container nav ul li a:hover {
-  text-decoration: underline;
   background: -moz-linear-gradient(left center, rgba(255, 255, 255, 0), #dadada) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(left center, rgba(255, 255, 255, 0), #dadada) repeat scroll 0 0 transparent;
   padding-right: 35px;
 }
 body .container article {
@@ -609,7 +619,7 @@ body footer {
 }
 .markdown-body .highlight pre,
 .markdown-body pre {
-  background-color: #F8F8F8;
+  background-color: #e6e6e6;
   border: 1px solid #CCCCCC;
   border-radius: 3px 3px 3px 3px;
   font-size: 13px;

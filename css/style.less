@@ -37,14 +37,27 @@ body{
 
         position: relative;
         nav{
+            &.fixed{
+                position: fixed;
+                top: 0;
+            }
             margin-right: 10px
             left: 0px;
             position: absolute;
             text-align: right;
             width: 200px;
             ul{
-                padding-left: 35px;
+                padding-left: 25px;
                 li{
+                    &.active{
+                        border-right: 3px solid #5E6B82;
+                    }
+
+                    &.active a{
+                        padding-right: 35px;
+                        background: -moz-linear-gradient(left center , rgba(255, 255, 255, 0), #DADADA) repeat scroll 0 0 transparent;
+                        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #DADADA);
+                    }
                     list-style:none;
                     border-bottom: 1px solid #DADADA;
                     a{
@@ -54,15 +67,13 @@ body{
                         line-height: 44px;
                         display: inline-block;
                         padding-right: 23px;
-                        transition: all 0.2s linear 0s;
+                        .transition(0.2s);
                         text-decoration: none;
-                        &.current{
-                            border-right: 2px solid #5E6B82;
-                            padding-right: 21px;
-                        }
+                        
                         &:hover{
-                            text-decoration: underline;
+                            // text-decoration: underline;
                             background: -moz-linear-gradient(left center , rgba(255, 255, 255, 0), #DADADA) repeat scroll 0 0 transparent;
+                            background: -webkit-gradient(left center , rgba(255, 255, 255, 0), #DADADA) repeat scroll 0 0 transparent;
                             padding-right: 35px;
                         }
                     }
@@ -368,7 +379,7 @@ body{
     padding: 0 5px;
 }
 .markdown-body .highlight pre, .markdown-body pre {
-    background-color: #F8F8F8;
+    background-color: #e6e6e6;
     border: 1px solid #CCCCCC;
     border-radius: 3px 3px 3px 3px;
     font-size: 13px;

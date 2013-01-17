@@ -26,34 +26,34 @@
     </script>
 
   </head>
-  <body>
+  <body data-spy="scroll">
     <header>
       <h1>Front End Standards</h1>
       <span class="description">前端规范</span>
     </header>
     <div class="container">
       <nav>
-        <ul>
+        <ul class="nav" id="nav">
           <li>
-            <a href="#">规范梗概</a>
+            <a href="#1">规范梗概</a>
           </li>
           <li>
-            <a class="current" href="#">CSS 规范</a>
+            <a class="current" href="#22css">CSS 规范</a>
           </li>
           <li>
-            <a href="#">XHTML 规范</a>
+            <a href="#23xhtml">XHTML 规范</a>
           </li>
           <li>
-            <a href="#">JS 规范</a>
+            <a href="#24js">JS 规范</a>
           </li>
           <li>
-            <a href="#">响应式 Web 规范</a>
+            <a href="#25responsiveweb">响应式 Web 规范</a>
           </li>
           <li>
-            <a href="#">Newletter规范</a>
+            <a href="#26newletter">Newletter规范</a>
           </li>
           <li>
-            <a href="#">资源汇总</a>
+            <a href="#27">资源汇总</a>
           </li>
           <li>
             <a href="#">参考数据</a>
@@ -293,7 +293,7 @@ _如：以下2种顺序均可_
     <link rel="stylesheet" href="/css/xxx.css">
     
     <script type="text/javascript">
-        Google 统计代码 的位置在离</head>最近的位置
+        //Google 统计代码 的位置在离</head>最近的位置
   </script>
     </head>
 
@@ -450,11 +450,12 @@ _如：以下2种顺序均可_
 
 更多细节参考下面链接：  
 [12 Killer Tips and Tricks for Building HTML Email]  
-[Coding HTML Newsletters\(EDM’s\)]
+[Coding HTML Newsletters (EDM)]
 
-### 2.7 生产力工具推荐(Mac)
+### 2.7 生产力工具推荐
+#### 2.7.1 for Mac OS
 *for more app detial check -> [IUSETHIS](http://osx.iusethis.com/user/hzlzh 'App pack')*  
-#### 2.7.1 前端相关工具
+##### 2.7.1.1 前端相关工具(Mac)
 
 * 编辑器：[Sublime Text 2] / [TextMate 2] / [Vim]
 * 命令行：[iTerm2]
@@ -476,11 +477,15 @@ _如：以下2种顺序均可_
 * 多浏览器Cookie管理：[Cookie]
 * 图片素材收集：[Sparkbox] / [Pixa]
 
-#### 2.7.2 其他效率工具
+##### 2.7.1.2 其他效率工具
 
 * 快速启动及切换app：[Alfred]
 * 笔记：[Evernote]
 * 压缩解压：[The Unarchiver] / [Keka] / [iPack]
+
+##### 2.7.2.1 前端相关工具(Windows)
+
+##### 2.7.2.2 其他效率工具(Windows)
 
 #### 2.7.3 其他收集
 * Firefox 扩展收藏集 -> [Firefox Add-ons collections]
@@ -740,7 +745,7 @@ _如：以下2种顺序均可_
 [Wiki page index]: https://github.com/GeekPark/Doc/wiki/_pages
 
 [12 Killer Tips and Tricks for Building HTML Email]: http://www.queness.com/post/8784/12-killer-tips-and-tricks-for-building-html-email
-[Coding HTML Newsletters\(EDM’s\)]: http://www.web-ed.com.au/2011/05/coding-html-newsletters-edms-quick-guide/
+[Coding HTML Newsletters (EDM)]: http://www.web-ed.com.au/2011/05/coding-html-newsletters-edms-quick-guide/
 
 [MIT License]: http://en.wikipedia.org/wiki/MIT_License
 
@@ -765,6 +770,8 @@ _如：以下2种顺序均可_
     <div id="processingTime" title="Last processing time">0 ms</div>
   </div>
     </footer>
+    <script type="text/javascript" src="js/libs/bootstrap-scrollspy.js"></script>
+
     <script src="js/script.js"></script>
     <script>
       //<![CDATA[

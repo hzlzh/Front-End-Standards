@@ -1,14 +1,19 @@
-jQuery(document).ready(function($) {
-console.log('111')
+jQuery(document).ready(function(){
 
-setTimeout(function() {
-setTimeout(function() {
-$('pre,code').addClass('prettyprint')
-prettyPrint()
-
+setTimeout(function(){
+	$('pre, code:not(pre code)').addClass('prettyprint');
+	prettyPrint();
 }, 1000);
 
-console.log('222')
-}, 1000);
+$(function(){
+    window.onscroll=function(){
+        if(document.body.scrollTop>120 || document.documentElement.scrollTop>120){
+            $(".container nav").addClass('fixed');
+        }
+        else{
+            $(".container nav").removeClass('fixed');
+        }
+    }
 });
-console.log('333')
+
+});

@@ -366,6 +366,46 @@
 				"buffer_size": 8681,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 24069,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n<div style=\"width:200px;height:200px;background-color:#999999;overflow:auto;\" id=\"外层元素A\"> \n<div style=\"width:100px;height:300px;background-color:#FFFF00;\" id=\"内层元素A\"> \n这些文字显示在内层元素中。 \n</div> \n</div> \n<p>scrollTop值是：<span id=\"外层元素A的scrollTop的值\"></span></p> \n<p><button type=\"button\" onclick=\"div_外层元素A.scrollTop=50;\">把scrollTop设为50</button> \n<button type=\"button\" onclick=\"div_外层元素A.scrollTop=500;\">把scrollTop设为500</button> \n</p> \n<p>输入scrollTop的值:<input type=\"text\" id=\"输入scrollTop的值\" value=\"\" /> \n<button type=\"button\" onclick=\"设置scrollTop的值()\" name=\"设置scrollTop的值\">确定</button> \n</p> \n<script type=\"text/javascript\"> \nvar div_外层元素A = document.getElementById(\"外层元素A\"); \ndiv_外层元素A.onscroll=读取scrollTop的值并显示出来; \n//注册onscroll事件处理函数。当拖动滚动条时，会产生onscroll事件 \nvar span_外层元素A的scrollTop的值 = document.getElementById(\"外层元素A的scrollTop的值\"); \n//onscroll事件的处理函数 \nfunction 读取scrollTop的值并显示出来() \n{span_外层元素A的scrollTop的值.innerHTML=div_外层元素A.scrollTop; \n//读取\"外层元素\"此时的scrollTop的值并显示出来 \n} \n读取scrollTop的值并显示出来(); \n//页面加载完成后，执行一次此函数。显示最初的scrollTop值，此时的值为0 \ndiv_外层元素A.scrollTop = 10; \n//通过js语句来设置scrollTop的值,本条语句会触发onscroll事件，使得\"读取scrollTop的值并显示出来\"函数执行一次。 \nfunction 设置scrollTop的值() \n{ if(\"\" != document.getElementById(\"输入scrollTop的值\").value) \ndiv_外层元素A.scrollTop = document.getElementById(\"输入scrollTop的值\").value; \nelse alert(\"请输入一个数值\"); \n}</script>\n\n",
+			"settings":
+			{
+				"buffer_size": 1325,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/script.js",
+			"settings":
+			{
+				"buffer_size": 240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.less",
+			"settings":
+			{
+				"buffer_size": 10543,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/libs/prettify.css",
+			"settings":
+			{
+				"buffer_size": 1570,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -456,6 +496,7 @@
 	},
 	"file_history":
 	[
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/libs/elements.less",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/index.html",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/README.md",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/style.css",
@@ -580,7 +621,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 95.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"<open folders>",
@@ -601,6 +642,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mac",
+			".markdown-body pre",
+			"transition",
+			"tran",
+			"Google",
+			"EDM",
+			"min",
 			"y tt",
 			".tt",
 			"tt",
@@ -721,14 +769,7 @@
 			"体验",
 			"date",
 			"da te›",
-			"error",
-			"most-p ",
-			" class=\"on icons app-shadow\"",
-			"opacity",
-			"status",
-			"text-content",
-			"fancybox",
-			"anim"
+			"error"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -777,7 +818,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -792,8 +833,8 @@
 						"selection":
 						[
 							[
-								8315,
-								8315
+								7782,
+								7782
 							]
 						],
 						"settings":
@@ -803,6 +844,157 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 4501.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 24069,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 52,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										7358,
+										7368
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								2773,
+								2752
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 923.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 1325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1083,
+								1103
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"is_xml": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/script.js",
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/style.less",
+					"settings":
+					{
+						"buffer_size": 10543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9903,
+								9903
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5018.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/libs/prettify.css",
+					"settings":
+					{
+						"buffer_size": 1570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								846,
+								846
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
