@@ -193,7 +193,7 @@ body header {
   margin-bottom: 20px;
 }
 body header h1 {
-  margin: 40px 0 0 0;
+  margin: 0px 0 0 0;
   text-shadow: 0px 0px 1px #ffffff;
 }
 body header h1:before {
@@ -252,7 +252,7 @@ body .container nav ul li a {
 }
 body .container nav ul li a:hover {
   background: -moz-linear-gradient(left center, rgba(255, 255, 255, 0), #dadada) repeat scroll 0 0 transparent;
-  background: -webkit-gradient(left center, rgba(255, 255, 255, 0), #dadada) repeat scroll 0 0 transparent;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #dadada);
   padding-right: 35px;
 }
 body .container article {
@@ -625,7 +625,7 @@ body footer {
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
-  padding: 6px 10px;
+  padding: 2px;
 }
 .markdown-body pre code,
 .markdown-body pre tt {
