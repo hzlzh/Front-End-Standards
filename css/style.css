@@ -296,6 +296,12 @@ body footer .process-time {
 body footer .process-time {
   margin-left: 5px;
 }
+body footer .forkme {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 0;
+}
 .markdown-body {
   font-size: 14px;
   line-height: 1.6;
