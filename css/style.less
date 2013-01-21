@@ -1,5 +1,5 @@
 /*
-@name: ###
+@name: Front End Standards (http://Front-End-Standards.com)
 @author: hzlzh(hzlzh.dev@gmail.com)
 */
 @import "libs/reset";
@@ -12,10 +12,9 @@ body{
     margin: 0;
     header{
         margin-left: 200px;
-        width:500px;
         overflow: hidden;
         margin-bottom: 20px;
-        h1{margin: 0px 0 0 0;
+        h1{margin: 37px 0 0 0;
 
                 text-shadow: 0px 0px 1px #fff}
         h1:before{
@@ -39,7 +38,7 @@ body{
         nav{
             &.fixed{
                 position: fixed;
-                top: 0;
+                top: 50px;
             }
             margin-right: 10px
             left: 0px;
@@ -47,6 +46,7 @@ body{
             text-align: right;
             width: 200px;
             ul{
+                margin:0;
                 padding-left: 25px;
                 li{
                     &.active{
@@ -85,14 +85,19 @@ body{
             position: relative;
             .content-box{
                 border: 1px solid #dadada;
+                border-right: none;
                 background: url("images/box-bg.png") repeat scroll 0 0 transparent;
                 padding:10px;
+                padding-right: 0;
                 .content{
                     background: none repeat scroll 0 0 #fbfbfb;
                     border: 1px solid #fff;
+                    border-right: none;
                     left: 200px;
                     padding:10px;
+                    padding-right: 0;
                     #outputPane, #syntaxPane{height:400px;width: 100%;}
+                    #paneSetting{border: 1px solid #ddd;padding: 2px;margin-bottom: 5px;}
                     h4{}
                     p{}
                 }
@@ -103,8 +108,18 @@ body{
     footer{
         overflow: hidden;
         .copyright{}
+        #processingTime,.process-time{
+            color: #666666;
+            font-size: 10px;
+            text-shadow: 0 0 1px #FFFFFF;
+        }
+        .process-time{margin-left: 5px;}
     }
 }
+
+
+
+
 
 
 
@@ -365,7 +380,7 @@ body{
     padding: 0 5px;
 }
 .markdown-body code {
-    white-space: nowrap;
+    // white-space: nowrap;
 }
 .markdown-body pre > code {
     background: none repeat scroll 0 0 transparent;
@@ -383,6 +398,7 @@ body{
     border: 1px solid #CCCCCC;
     border-radius: 3px 3px 3px 3px;
     font-size: 13px;
+    margin-right: 10px;
     line-height: 19px;
     overflow: auto;
     padding: 2px;
@@ -392,4 +408,12 @@ body{
     border: medium none;
     margin: 0;
     padding: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  body .container article{margin-left: 0;}
+  body .container nav{display: none;}
+  .markdown-body table th, .markdown-body table td{padding: 0!important;}
 }

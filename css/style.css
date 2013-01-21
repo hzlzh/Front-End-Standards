@@ -1,5 +1,5 @@
 /*
-@name: ###
+@name: Front End Standards (http://Front-End-Standards.com)
 @author: hzlzh(hzlzh.dev@gmail.com)
 */
 /*
@@ -188,12 +188,11 @@ body {
 }
 body header {
   margin-left: 200px;
-  width: 500px;
   overflow: hidden;
   margin-bottom: 20px;
 }
 body header h1 {
-  margin: 0px 0 0 0;
+  margin: 37px 0 0 0;
   text-shadow: 0px 0px 1px #ffffff;
 }
 body header h1:before {
@@ -221,9 +220,10 @@ body .container nav {
 }
 body .container nav.fixed {
   position: fixed;
-  top: 0;
+  top: 50px;
 }
 body .container nav ul {
+  margin: 0;
   padding-left: 25px;
 }
 body .container nav ul li {
@@ -261,22 +261,40 @@ body .container article {
 }
 body .container article .content-box {
   border: 1px solid #dadada;
+  border-right: none;
   background: url("images/box-bg.png") repeat scroll 0 0 transparent;
   padding: 10px;
+  padding-right: 0;
 }
 body .container article .content-box .content {
   background: none repeat scroll 0 0 #fbfbfb;
   border: 1px solid #fff;
+  border-right: none;
   left: 200px;
   padding: 10px;
+  padding-right: 0;
 }
 body .container article .content-box .content #outputPane,
 body .container article .content-box .content #syntaxPane {
   height: 400px;
   width: 100%;
 }
+body .container article .content-box .content #paneSetting {
+  border: 1px solid #ddd;
+  padding: 2px;
+  margin-bottom: 5px;
+}
 body footer {
   overflow: hidden;
+}
+body footer #processingTime,
+body footer .process-time {
+  color: #666666;
+  font-size: 10px;
+  text-shadow: 0 0 1px #FFFFFF;
+}
+body footer .process-time {
+  margin-left: 5px;
 }
 .markdown-body {
   font-size: 14px;
@@ -603,9 +621,6 @@ body footer {
   margin: 0 2px;
   padding: 0 5px;
 }
-.markdown-body code {
-  white-space: nowrap;
-}
 .markdown-body pre > code {
   background: none repeat scroll 0 0 transparent;
   border: medium none;
@@ -623,6 +638,7 @@ body footer {
   border: 1px solid #CCCCCC;
   border-radius: 3px 3px 3px 3px;
   font-size: 13px;
+  margin-right: 10px;
   line-height: 19px;
   overflow: auto;
   padding: 2px;
@@ -633,4 +649,16 @@ body footer {
   border: medium none;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 768px) {
+  body .container article {
+    margin-left: 0;
+  }
+  body .container nav {
+    display: none;
+  }
+  .markdown-body table th,
+  .markdown-body table td {
+    padding: 0!important;
+  }
 }

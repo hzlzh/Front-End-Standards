@@ -7,7 +7,7 @@ setTimeout(function(){
 
 $(function(){
     window.onscroll=function(){
-        if(document.body.scrollTop>120 || document.documentElement.scrollTop>120){
+        if(document.body.scrollTop>70 || document.documentElement.scrollTop>70){
             $(".container nav").addClass('fixed');
         }
         else{
