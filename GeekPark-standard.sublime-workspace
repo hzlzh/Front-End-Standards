@@ -4,12 +4,20 @@
 		"selected_items":
 		[
 			[
-				"pos",
-				"pos:a	position:absolute"
+				"text",
+				"text-indent"
 			],
 			[
-				"text",
-				"text-decoration"
+				"fl",
+				"fl:l	float:left"
+			],
+			[
+				"br",
+				"border-right"
+			],
+			[
+				"pos",
+				"pos:a	position:absolute"
 			],
 			[
 				"margin",
@@ -30,10 +38,6 @@
 			[
 				"po",
 				"pos:a	position:absolute"
-			],
-			[
-				"fl",
-				"fl:r	float:right"
 			],
 			[
 				"sub",
@@ -208,10 +212,6 @@
 				"padding"
 			],
 			[
-				"br",
-				"background-repeat"
-			],
-			[
 				"no",
 				"no-repeat"
 			],
@@ -359,68 +359,11 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "js/libs/showdown-gui.js",
-			"settings":
-			{
-				"buffer_size": 8681,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 24223,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "$('[data-spy=\"scroll\"]').each(function(){\nvar $spy = $(this).scrollspy('refresh');\n});",
-			"settings":
-			{
-				"buffer_size": 86,
-				"line_ending": "Unix",
-				"name": "$('[data-spy=\"scroll\"]').each(function(){"
-			}
-		},
-		{
-			"file": "js/script.js",
-			"settings":
-			{
-				"buffer_size": 426,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/style.less",
-			"settings":
-			{
-				"buffer_size": 11034,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/libs/prettify.css",
-			"settings":
-			{
-				"buffer_size": 1570,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/libs/elements.less",
-			"settings":
-			{
-				"buffer_size": 5240,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 49.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
@@ -488,7 +431,7 @@
 				"Preferences: Alignment Key Bindings – Default"
 			]
 		],
-		"width": 579.0
+		"width": 459.0
 	},
 	"console":
 	{
@@ -505,13 +448,16 @@
 	},
 	"file_history":
 	[
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/style.less",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/libs/elements.less",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/libs/prettify.css",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/js/libs/showdown-gui.js",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/js/script.js",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/index.html",
+		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/README.md",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/style.css",
-		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/style.less",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/index.haml",
-		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/js/libs/showdown-gui.js",
 		"/Users/hzlzh/Project/hzlzh/showdown/example/showdown-gui.html",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/javascripts/main.js",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/params.json",
@@ -554,7 +500,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/iapps2012/application/views/jury/sign_up_form.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/css/observer-style.css",
 		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/public/js/observer-script.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/frame/head/pri_head1.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/geekevent/application/views/blue/observer.html",
@@ -651,6 +596,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"149",
+			"forkme",
+			"邮件",
+			".markdown-body",
+			"content-box",
+			"#",
+			"table",
+			".markdown-body code",
+			"table",
+			"pre",
+			"pre.prettyprint",
+			"content",
 			".markdown-body pre",
 			".markdown-body .highlight pre, .markdown-body pre",
 			"End",
@@ -766,19 +723,7 @@
 			"def",
 			"de'f",
 			"id=\"apply",
-			"Windows 8 技巧",
-			"暂未确定",
-			"Windows 8 技巧",
-			"微软拼音输入法",
-			"success",
-			"des",
-			"aboutActive",
-			"title",
-			"load",
-			"observer-message",
-			"error",
-			"input",
-			"空"
+			"Windows 8 技巧"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -827,215 +772,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "js/libs/showdown-gui.js",
-					"settings":
-					{
-						"buffer_size": 8681,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3290,
-								3290
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1564.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 24223,
-						"regions":
-						{
-							"TagLint":
-							{
-								"flags": 52,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										7408,
-										7418
-									]
-								],
-								"scope": "variable.parameter"
-							}
-						},
-						"selection":
-						[
-							[
-								12291,
-								12291
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5768.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"settings":
-					{
-						"buffer_size": 86,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								86
-							]
-						],
-						"settings":
-						{
-							"auto_name": "$('[data-spy=\"scroll\"]').each(function(){",
-							"is_xml": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/script.js",
-					"settings":
-					{
-						"buffer_size": 426,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								129,
-								129
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "css/style.less",
-					"settings":
-					{
-						"buffer_size": 11034,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10772,
-								10772
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5183.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "css/libs/prettify.css",
-					"settings":
-					{
-						"buffer_size": 1570,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								846,
-								846
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "css/libs/elements.less",
-					"settings":
-					{
-						"buffer_size": 5240,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1825,
-								1825
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
