@@ -367,16 +367,16 @@
 		"selected_items":
 		[
 			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
 				"php",
 				"Set Syntax: PHP"
 			],
 			[
 				"json",
 				"Pretty JSON: Reformat (Pretty Print) JSON"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"ja",
@@ -431,7 +431,7 @@
 				"Preferences: Alignment Key Bindings – Default"
 			]
 		],
-		"width": 459.0
+		"width": 579.0
 	},
 	"console":
 	{
@@ -448,12 +448,12 @@
 	},
 	"file_history":
 	[
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/index.html",
+		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/js/script.js",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/style.less",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/libs/elements.less",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/libs/prettify.css",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/js/libs/showdown-gui.js",
-		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/js/script.js",
-		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/index.html",
 		"/Users/hzlzh/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/README.md",
 		"/Users/hzlzh/Project/hzlzh/GeekPark-FrontEnd-Standard/css/style.css",
@@ -596,6 +596,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"标签预留链接占位符使",
 			"149",
 			"forkme",
 			"邮件",
@@ -722,8 +723,7 @@
 			"                $('.item-message').html($(data.message)[0]);\nopenwrt-wrt54gs-jffs2.bin",
 			"def",
 			"de'f",
-			"id=\"apply",
-			"Windows 8 技巧"
+			"id=\"apply"
 		],
 		"highlight": false,
 		"in_selection": false,
