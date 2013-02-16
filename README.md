@@ -5,7 +5,7 @@
 
 This standards is hosted on **Github-Pages**, feel free to `Fork` & `Star`.
 
-<span class="mini-icon mini-icon-branch">_</span>*Branch:* `gh-pages`
+*Branch:* `gh-pages`
 
 ## License
 
