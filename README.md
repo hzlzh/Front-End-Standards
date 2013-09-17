@@ -1,11 +1,16 @@
-[Front-End-Standards.com]
+# 前端规范
 ====
 
-## Details
+此为`前端开发团队`遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。
+此规范为参考规范，不全是硬性要求，统一团队编码规范和风格。让所有代码都是有规可循的，并且能够得到沉淀，减少重复劳动。
 
-This standards is hosted on **Github-Pages**, feel free to `Fork` & `Star`.
+访问地址：[Front-End-Standards.com]
 
-*Branch:* `gh-pages`
+## 贡献
+
+该`前端规范`托管在`Github Page`上，`Fork` & `Star`让它变得更强大。
+
+*页面Git分支：* `gh-pages`
 
 ## License
 
