@@ -21,5 +21,5 @@
 
 Available under MIT. See [LICENSE] for more details.
 
-[Front-End-Standards.com]: http://front-end-standards.com/ 'Front End Standards'
+[Front-End-Standards.com]: http://hzlzh.github.io/Front-End-Standards/ 'Front End Standards'
 [LICENSE]: http://rem.mit-license.org 'MIT License'
