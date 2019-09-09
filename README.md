@@ -3,7 +3,7 @@
 此为`前端开发团队`遵循和约定的代码书写规范，意在提高代码的规范性和可维护性。
 此规范为参考规范，不全是硬性要求，统一团队编码规范和风格。让所有代码都是有规可循的，并且能够得到沉淀，减少重复劳动。
 
-访问地址：[Front-End-Standards.com]
+访问地址：[http://hzlzh.github.io/Front-End-Standards/]
 
 更多：
 
@@ -21,5 +21,5 @@
 
 Available under MIT. See [LICENSE] for more details.
 
-[Front-End-Standards.com]: http://hzlzh.github.io/Front-End-Standards/ 'Front End Standards'
+[http://hzlzh.github.io/Front-End-Standards/]: http://hzlzh.github.io/Front-End-Standards/ 'Front End Standards'
 [LICENSE]: http://rem.mit-license.org 'MIT License'
